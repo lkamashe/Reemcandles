@@ -57,6 +57,17 @@ writing anything. When this file and `brand.md` disagree, `brand.md` wins.
 - **Pace:** Not timed yet. Use `beats.py --wpm 150` as a starting point for spoken
   Lebanese dialogue and adjust after the first real timing.
 
+## How the reels are made
+
+- Every reel right now is made with an AI video generation tool, using reference
+  images (photos of the real candles, the box and the logo). This will continue.
+- Claude's job: write the full, detailed prompt for each 15-second clip (scene,
+  objects, motion, light, camera, exact ordered actions, object states, logo and
+  box protection), plus the on-screen text, the dialogue and the captions.
+- Fixes to a generated clip (smoke, glitches, wrong box) are made in the prompt
+  and the clip is regenerated, not patched in editing.
+- Filmed videos: Ali edits those himself. Do not plan them unless he asks.
+
 ## Formats that work
 
 1. Story reels with characters (mother and son, a gift moment, a room that feels
