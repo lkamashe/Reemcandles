@@ -20,6 +20,9 @@ writing anything. When this file and `brand.md` disagree, `brand.md` wins.
 - **What I sell:** Candles in set shapes (rose cone, gold relief pillar, teddy
   bear, dove couple; floral glow pillar still in testing), each in the olive
   drawer gift box. Delivery inside Lebanon only.
+- **Teaser phase (Ali, Nov 2026):** All the shapes shown in the teaser reels are
+  real candles Ali is making, including the floral glow pillar. They can all be
+  shown now as «قريباً». None of them is on sale until orders open.
 - **Status:** Launching. Orders are NOT open. Everything says «قريباً» until Ali
   says otherwise. Orders open at the end of November 2026.
 
@@ -82,7 +85,7 @@ must be genuinely different from the ones before.
   wisp from a blown-out wick).
 - **Claims I cannot make:** that a candle removes odors, smoke or smells or cleans
   the air; "18K"; hand-carving; who issued the certificates or what they cover;
-  that the floral glow pillar is for sale (still in testing).
+  that any candle can be bought now (nothing is on sale until orders open).
 - **Logo and box:** never redraw, mirror or regenerate the logo; the box is low
   and flat, olive, a sleeve with a drawer, no lid; logo on the TOP face only,
   "Made with love" on the drawer front.
