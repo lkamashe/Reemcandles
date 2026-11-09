@@ -18,7 +18,8 @@ writing anything. When this file and `brand.md` disagree, `brand.md` wins.
   their own space to feel elegant, and shops and salons that use candles for
   decoration and scent.
 - **What I sell:** Candles in set shapes (rose cone, gold relief pillar, teddy
-  bear, dove couple; floral glow pillar still in testing), each in the olive
+  bear, dove couple, floral glow pillar). Ali has many scents; ask him which
+  scent a video is about, never guess, each in the olive
   drawer gift box. Delivery inside Lebanon only.
 - **Teaser phase (Ali, Nov 2026):** All the shapes shown in the teaser reels are
   real candles Ali is making, including the floral glow pillar. They can all be
@@ -59,8 +60,18 @@ writing anything. When this file and `brand.md` disagree, `brand.md` wins.
 
 ## How the reels are made
 
-- Every reel right now is made with an AI video generation tool, using reference
-  images (photos of the real candles, the box and the logo). This will continue.
+- Every reel right now is made with MiniMax H3 (reference-image-to-video model),
+  run in ComfyUI on a rented RTX 5090 (RunPod). This will continue.
+- Workflow is IMAGES FIRST:
+  1. Continuity boards (one per character, product, location): full turnaround
+     (front, 3/4, side, back), close-ups, function and states (unlit, lit,
+     melting, ...), proportions and scale, colours and materials. Existing boards
+     are in `.claude/instagram/refs/`.
+  2. For a new video idea, Claude first writes the image prompts (any new board
+     needed, plus keyframe images), then the video prompts that use them.
+- Reference boards must follow brand.md too: no smoke (not even in the
+  "extinguished" state), no invented text or brands (matchboxes, labels), the
+  logo only from the real file.
 - Claude's job: write the full, detailed prompt for each 15-second clip (scene,
   objects, motion, light, camera, exact ordered actions, object states, logo and
   box protection), plus the on-screen text, the dialogue and the captions.
@@ -127,7 +138,8 @@ No prices, customer counts, reviews or results exist yet. Ask Ali; never invent.
 - **Allowed now:** a question to answer in the comments («شو ريحتك المفضلة؟»),
   a share ask («ابعتها لحدا بيحبها»), and the launch line («قريباً. آخر تشرين
   الثاني»).
-- **Keyword CTA:** none yet. Ask Ali before using one.
+- **Keyword CTA:** yes, Ali wants one. Word not chosen yet (proposed: «ريم»).
+  The commenter gets a reply when orders open; Ali sends every reply himself.
 - **Link:** reemcandles.com (coming soon page with a countdown).
 - **Contact:** WhatsApp +961 70 662 567, support@reemcandles.com.
 - **Never:** follow asks, or anything that says orders are open.
