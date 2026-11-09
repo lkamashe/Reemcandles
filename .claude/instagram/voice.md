@@ -83,15 +83,14 @@ writing anything. When this file and `brand.md` disagree, `brand.md` wins.
   2. For a new video idea, Claude pitches the idea and lists exactly which
      reference images it needs (product, box, characters, location, first
      frame). Ali supplies them. Claude then writes the video prompts.
-- Reference boards must follow brand.md too: no smoke (not even in the
-  "extinguished" state), no invented text or brands (matchboxes, labels), the
-  logo only from the real file.
+- Reference images should avoid black smoke from a reem candle, invented text
+  or brands (matchboxes, labels), and use the logo only from the real file.
 - Claude's job: write the full, detailed prompt for each 15-second clip (scene,
   objects, motion, light, camera, exact ordered actions, object states, logo and
   box protection), plus the on-screen text, the dialogue and the captions.
 - Every generation costs money. The prompt must be right the first time: check
-  every small detail (hands, object states, box shape and logo, no smoke, text,
-  shape descriptions from brand.md) before handing it to Ali.
+  every small detail (hands, object states, box shape and logo, no black smoke from
+  reem, text, product exactly as in Ali's images) before handing it to Ali.
 - When reviewing a finished clip, fix problems in editing first (trim, cut,
   captions, overlays, end card). Suggest regenerating only when a problem cannot
   be fixed in editing and is worth the cost, and say so clearly.
@@ -121,13 +120,12 @@ must be genuinely different from the ones before.
 ## Off limits
 
 - **Topics:** pity or struggle stories, "we started small", weddings, brides,
-  smoke, cigarettes, vaping (never shown in any video or image, including a smoke
-  wisp from a blown-out wick).
-- **Claims I cannot make:** that a candle removes odors, smoke or smells or cleans
-  the air; "18K"; hand-carving; who issued the certificates or what they cover;
+  cigarettes, vaping. Black smoke from a reem candle (only a competitor candle
+  in a comparison may give black smoke).
+- **Claims I cannot make:** "18K"; hand-carving; who issued the certificates or what they cover;
   that any candle can be bought now (nothing is on sale until orders open).
 - **Logo and box:** never redraw, mirror or regenerate the logo; the box is low
-  and flat, olive, a sleeve with a drawer, no lid; logo on the TOP face only,
+  and flat (about 22x15x10 cm), olive, a sleeve with a drawer, no lid; logo on the TOP face only,
   "Made with love" on the drawer front.
 - **Publishing:** drafts only. Ali posts and replies himself.
 
