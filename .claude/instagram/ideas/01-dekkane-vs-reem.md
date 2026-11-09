@@ -187,3 +187,12 @@ LIGHTING: Evening warm lamps, then the reem candle adds a soft golden glow that 
 SOUND: Natural sound plus the spoken lines only: the match strike and its small crackle, the soft flutter of the flame, the glass jar sliding on stone, a soft laugh. No music.
 
 STRICT RULES: Speak only the five lines above, exactly as written, in Lebanese Arabic. The reem candle is always exactly as in Image 6, its flame is calm, clean and golden. The engraved number reads R001 only. The box always lies flat and never changes; the logo never changes. The characters, clothes and room never change. No text on screen, no subtitles, no extra people, no cigarettes. Realistic motion, nothing floating, nothing morphing.
+
+## Round 2 — images approved
+
+- ID close-up: R001, clean. The candle is the floral pillar -> the reem candle
+  in this video is the FLORAL PILLAR (refs/candle-floral-pillar.jpg, the
+  non-glow board).
+- First frame: smoke rises from the flame, short wide jar, bag logo visible. OK.
+- Next: Ali generates part 1 with the VIDEO PART 1 prompt above (Image 8 = the
+  floral pillar board), then sends the last frame; part 2 prompt is sent after.
