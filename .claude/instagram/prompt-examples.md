@@ -14,6 +14,16 @@ Improvements to apply on top of the baseline:
   lowered out of frame still burning") instead of only naming what to avoid;
   naming an object (smoke) can pull it into the frame. Keep the short STRICT
   RULES recap at the end.
+- NUMBERS FOR EVERYTHING (Ali, Nov 2026: MiniMax H3 follows details best when
+  they are measured). Every object gets an OBJECT SPEC block: exact size in cm
+  (length x width x height), which face it rests on, which face points to the
+  camera, how it is held (which hand(s), where the fingers grip, horizontal or
+  vertical, angle in degrees), and its state per beat (closed/open and by how
+  many cm, lit/unlit). Repeat the orientation inside each beat where the
+  object moves. Box: 22 cm long x 15 cm wide x 10 cm high; the drawer front is
+  the 15 x 10 cm face with Made with love and the pull tab; the drawer slides
+  out along the 22 cm length; the emblem is on the 22 x 15 cm top face.
+  Ask Ali for any product size that is not written down; never guess it.
 - When a character takes the box out of a bag, say how: "the box comes out
   lying flat, held horizontally with both hands, never tilted upright". In idea
   01 the model pulled it out upright and it looked like a tall box (~1.3 s).
