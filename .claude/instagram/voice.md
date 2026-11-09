@@ -64,8 +64,12 @@ writing anything. When this file and `brand.md` disagree, `brand.md` wins.
 - Claude's job: write the full, detailed prompt for each 15-second clip (scene,
   objects, motion, light, camera, exact ordered actions, object states, logo and
   box protection), plus the on-screen text, the dialogue and the captions.
-- Fixes to a generated clip (smoke, glitches, wrong box) are made in the prompt
-  and the clip is regenerated, not patched in editing.
+- Every generation costs money. The prompt must be right the first time: check
+  every small detail (hands, object states, box shape and logo, no smoke, text,
+  shape descriptions from brand.md) before handing it to Ali.
+- When reviewing a finished clip, fix problems in editing first (trim, cut,
+  captions, overlays, end card). Suggest regenerating only when a problem cannot
+  be fixed in editing and is worth the cost, and say so clearly.
 - Filmed videos: Ali edits those himself. Do not plan them unless he asks.
 
 ## Formats that work
