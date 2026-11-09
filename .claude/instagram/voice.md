@@ -19,7 +19,7 @@ writing anything. When this file and `brand.md` disagree, `brand.md` wins.
   decoration and scent.
 - **What I sell:** Candles in set shapes (rose cone, gold relief pillar, teddy
   bear, dove couple, floral glow pillar). Ali has many scents; ask him which
-  scent a video is about, never guess, each in the olive
+  scent a video is about, never guess. Each comes in the olive
   drawer gift box. Delivery inside Lebanon only.
 - **Teaser phase (Ali, Nov 2026):** All the shapes shown in the teaser reels are
   real candles Ali is making, including the floral glow pillar. They can all be
