@@ -196,3 +196,43 @@ STRICT RULES: Speak only the five lines above, exactly as written, in Lebanese A
 - First frame: smoke rises from the flame, short wide jar, bag logo visible. OK.
 - Next: Ali generates part 1 with the VIDEO PART 1 prompt above (Image 8 = the
   floral pillar board), then sends the last frame; part 2 prompt is sent after.
+
+## Part 1 generated — review
+
+Usable, no regeneration. Box comes out of the bag flat, drawer, Made with love
+and the emblem all right; floral candle on crinkle paper. The black smoke stops
+around 4 s (fine). The red jar ended on the right side of the table near the
+bag. Last frame is a close-up: the sister's face is out of frame, so part 2
+starts by pulling the camera back. Last frame saved as
+refs/idea01-part2-first-frame.png. Audio not transcribed here: Ali checks the
+lines by ear.
+
+## VIDEO PART 2 v2 (sent to Ali; replaces the earlier part 2 draft)
+
+Create a 15 second vertical 9:16 cinematic video, photorealistic, natural motion, 24 fps. Two characters speak in Lebanese Arabic, with clear natural voices and accurate lip sync. Use ONLY the exact spoken lines written below in quotes, word for word, in Lebanese Arabic dialect. Do not translate them, do not add any other words, no narrator, no music, no text or subtitles on screen.
+
+REFERENCES: Image 1 is the exact first frame of this video: start exactly from it. Image 2 is the brother: keep his exact face, short beard, hair, navy sweater, grey joggers and slippers. Image 3 is the sister: keep her exact face, long dark hair, camel coat, black top and gold earrings. Image 4 is the exact room. Image 5 is the exact reem gift box. Image 6 is the exact reem candle: use it exactly as shown, never change its shape, color or gold. Image 7 is the exact bottom of that candle with the engraved number R001. Image 8 is the cheap red jar candle, now blown out: it is NOT a reem candle.
+
+CHARACTERS: The brother is a Lebanese man about 30, easygoing and funny, with a relaxed male voice. The sister is a Lebanese woman about 27, elegant and confident, teasing, with a clear warm voice. Same faces, hair and clothes in every frame. Mouths clearly visible when they speak.
+
+THE BOX: the matte dark olive drawer box of Image 5, about 22 centimeters long, 15 centimeters wide and 10 centimeters high, lying flat on the coffee table, the drawer pulled out toward the camera. Gold emblem on the TOP face, Made with love and the olive pull tab on the drawer front. The logo never changes, never moves, never gets extra or missing letters.
+
+THE REEM CANDLE: exactly as in Image 6. It starts unlit, lying on the ivory crinkle paper in the drawer. When lit it has one small, calm, clean, steady golden flame with a clear warm glow around it.
+
+SHOT BY SHOT, with the dialogue:
+0 to 1.5 seconds: Exactly the frame of Image 1. The camera pulls back slowly and rises a little, until both the brother and the sister are fully visible with their faces, the box on the coffee table in front of them. Nobody speaks.
+1.5 to 4.5 seconds: The sister lifts the candle out of the drawer with both hands, turns it upside down and holds its bottom toward the camera, exactly as in Image 7, the engraved R001 clearly visible. She says in Lebanese Arabic, proud: "كل شمعة إلها رقمها."
+4.5 to 7.5 seconds: She turns the candle upright and stands it on the coffee table beside the open box, never on top of the box. She takes a wooden match from her coat pocket, strikes it, lights the wick, and lowers the burning match down out of the frame. The wick takes one calm, clean, steady golden flame. She says in Lebanese Arabic, softly: "هيدي من ريم." A warm golden glow spreads over the candle, the box and both faces.
+7.5 to 10 seconds: The brother leans toward the candle, closes his eyes halfway and breathes in slowly, then opens his eyes wide, impressed, and says in Lebanese Arabic: "ولك شو هالريحة!"
+10 to 12 seconds: The sister smiles, proud, and says in Lebanese Arabic: "ريحتها جاية من غراس."
+12 to 15 seconds: The brother slides the blown-out red jar candle away from the reem candle, to the far edge of the table, with one finger, grins, and says in Lebanese Arabic: "خلص، هيدي تقاعدت." The sister laughs.
+
+END FRAME: The lit reem candle with its calm golden flame standing beside the open olive box, gold emblem visible on top, the red jar candle at the far edge of the table, soft and out of focus, both siblings smiling behind, warm and golden.
+
+CAMERA AND FRAMING: Vertical 9:16, stable, after the pull back a medium shot looking down at about 30 degrees at the coffee table with both faces visible; a slow gentle push in on the reem candle in the last 3 seconds. Space at the top of the frame for text added later.
+
+LIGHTING: Evening warm lamps, then the reem candle adds a soft golden glow over the table and the faces. Smooth and gradual.
+
+SOUND: Natural sound plus the spoken lines only: the crinkle paper, the match strike and its small crackle, the soft flutter of the flame, the glass jar sliding on stone, a soft laugh. No music.
+
+STRICT RULES: Speak only the five lines above, exactly as written, in Lebanese Arabic. The reem candle is always exactly as in Image 6; its flame is calm, clean and golden. The engraved number reads R001 only. The box always lies flat and never changes; the logo never changes. The characters, clothes and room never change. No text on screen, no subtitles, no extra people, no cigarettes. Realistic motion, nothing floating, nothing morphing.
