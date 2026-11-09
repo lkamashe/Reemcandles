@@ -14,6 +14,11 @@ Improvements to apply on top of the baseline:
   lowered out of frame still burning") instead of only naming what to avoid;
   naming an object (smoke) can pull it into the frame. Keep the short STRICT
   RULES recap at the end.
+- When a character takes the box out of a bag, say how: "the box comes out
+  lying flat, held horizontally with both hands, never tilted upright". In idea
+  01 the model pulled it out upright and it looked like a tall box (~1.3 s).
+- Review every generated clip frame by frame at 8 fps, not only at 2 fps:
+  short wrong moments (like the upright box) hide between 2 fps samples.
 - Pre-flight checklist before handing any prompt to Ali (generation costs
   money): no black smoke from a reem candle, product exactly as in Ali's
   reference images, box low/flat/drawer 22x15x10 cm/logo on top,
