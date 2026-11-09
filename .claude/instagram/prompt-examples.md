@@ -1,8 +1,24 @@
 # Prompt examples that worked (from Ali) — bedroom story reel
 
 These are Ali's real prompts for MiniMax H3 (video) and for the continuity
-boards (images). Match this structure, length and level of detail for every new
-idea. Do NOT reuse the story itself: each new idea must be different.
+boards (images). They are a working BASELINE, not a fixed template: keep the
+level of detail, and improve the structure wherever it helps (Ali's words).
+Do NOT reuse the story itself: each new idea must be different.
+
+Improvements to apply on top of the baseline:
+- Hook first: the strongest moment or line lands in the first 2 seconds of
+  part 1 (no silent build-up before it).
+- Fewer, longer beats: about 4 to 6 beats per 15 s clip, each spoken line with
+  enough time for clean lip sync.
+- Describe wanted states positively ("a clean steady flame", "the match is
+  lowered out of frame still burning") instead of only naming what to avoid;
+  naming an object (smoke) can pull it into the frame. Keep the short STRICT
+  RULES recap at the end.
+- Pre-flight checklist before handing any prompt to Ali (generation costs
+  money): brand.md claims (no smell removal, no clean air), no smoke anywhere
+  including references, exact product shape, box low/flat/drawer/logo on top,
+  candle lit/unlit state per second, every spoken line in Lebanese with no
+  tashkeel needed on screen, end frame defined, room left for on-screen text.
 
 Known issues to avoid next time (they break brand.md rule 7 / rule 6):
 - The story and the light shift ("stuffy, hazy air" -> "air looks clean and
