@@ -66,7 +66,7 @@ writing anything. When this file and `brand.md` disagree, `brand.md` wins.
   1. Continuity boards (one per character, product, location): full turnaround
      (front, 3/4, side, back), close-ups, function and states (unlit, lit,
      melting, ...), proportions and scale, colours and materials. Existing boards
-     are in `.claude/instagram/refs/`.
+     are in `.claude/instagram/refs/`. Prompt format to follow: `.claude/instagram/prompt-examples.md`.
   2. For a new video idea, Claude first writes the image prompts (any new board
      needed, plus keyframe images), then the video prompts that use them.
 - Reference boards must follow brand.md too: no smoke (not even in the
