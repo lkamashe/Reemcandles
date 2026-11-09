@@ -236,3 +236,8 @@ LIGHTING: Evening warm lamps, then the reem candle adds a soft golden glow over 
 SOUND: Natural sound plus the spoken lines only: the crinkle paper, the match strike and its small crackle, the soft flutter of the flame, the glass jar sliding on stone, a soft laugh. No music.
 
 STRICT RULES: Speak only the five lines above, exactly as written, in Lebanese Arabic. The reem candle is always exactly as in Image 6; its flame is calm, clean and golden. The engraved number reads R001 only. The box always lies flat and never changes; the logo never changes. The characters, clothes and room never change. No text on screen, no subtitles, no extra people, no cigarettes. Realistic motion, nothing floating, nothing morphing.
+
+## Part 2 — final prompt sent (Ali: keep the same style as part 1; numbers rule starts next video)
+
+Only change from v2: the sister (standing on the right, next to the red jar)
+slides the jar away, because the brother on the left cannot reach it.
