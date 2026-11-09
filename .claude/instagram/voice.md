@@ -14,6 +14,11 @@ STATUS: DRAFT, waiting for Ali's approval.
 4. Gift box: drawer box about 22 cm long, 15 cm wide, 10 cm high.
 5. Dialogue can be Lebanese or Syrian (شامي).
 6. Keyword «ريم» is approved, but only once orders open. Not before.
+7. Working style: while images are still being fixed, do NOT send video
+   prompts. Tell Ali exactly what to do now, one step at a time. When an image
+   is wrong, say "this one is not good" and give a complete, standalone prompt
+   for a new one (never "change this part of the old prompt"). Say exactly
+   which images to attach to each prompt.
 
 The full brand rules live in `brand.md` next to this file. Read both before
 writing anything. When this file and `brand.md` disagree, `brand.md` wins.
