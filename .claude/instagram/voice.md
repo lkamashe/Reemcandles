@@ -2,6 +2,19 @@
 
 STATUS: DRAFT, waiting for Ali's approval.
 
+## Ali's decisions (Nov 2026) — these override anything below and brand.md
+
+1. Ali chooses the candle shape and look, and supplies the reference images.
+   Claude does not judge or design product shapes: Claude asks for the images
+   it needs, then writes the video prompt from them.
+2. Claims: a story where the candle's pleasant scent replaces a bad smell is
+   fine. Do not police claims.
+3. Smoke is allowed when the idea needs it, but a reem candle NEVER gives black
+   smoke. Black smoke only on another (non-reem) candle, in a comparison.
+4. Gift box: drawer box about 22 cm long, 15 cm wide, 10 cm high.
+5. Dialogue can be Lebanese or Syrian (شامي).
+6. Keyword «ريم» is approved, but only once orders open. Not before.
+
 The full brand rules live in `brand.md` next to this file. Read both before
 writing anything. When this file and `brand.md` disagree, `brand.md` wins.
 
@@ -36,7 +49,7 @@ writing anything. When this file and `brand.md` disagree, `brand.md` wins.
   - «قريباً. آخر تشرين الثاني.»
   - From the mother and son reel: «يا ساتر! شو هالريحة هاي؟» / «استنى شوي.» /
     «تعا شوف.» / «هلق بتشوف.» / «الله يخليك.»
-- **Language:** Lebanese Arabic (عامية لبنانية) for everything spoken and for
+- **Language:** Lebanese or Syrian Arabic (شامي) for everything spoken and for
   captions. Formal Arabic (فصحى) only on the message card. English only for
   hashtags and the "HAND MADE CANDLES" tagline.
 - **Tone:** Confident, warm, elegant. Short sentences, often two to five words.
@@ -62,13 +75,14 @@ writing anything. When this file and `brand.md` disagree, `brand.md` wins.
 
 - Every reel right now is made with MiniMax H3 (reference-image-to-video model),
   run in ComfyUI on a rented RTX 5090 (RunPod). This will continue.
-- Workflow is IMAGES FIRST:
+- Workflow is IMAGES FIRST (Ali makes the images):
   1. Continuity boards (one per character, product, location): full turnaround
      (front, 3/4, side, back), close-ups, function and states (unlit, lit,
      melting, ...), proportions and scale, colours and materials. Existing boards
      are in `.claude/instagram/refs/`. Prompt format to follow: `.claude/instagram/prompt-examples.md`.
-  2. For a new video idea, Claude first writes the image prompts (any new board
-     needed, plus keyframe images), then the video prompts that use them.
+  2. For a new video idea, Claude pitches the idea and lists exactly which
+     reference images it needs (product, box, characters, location, first
+     frame). Ali supplies them. Claude then writes the video prompts.
 - Reference boards must follow brand.md too: no smoke (not even in the
   "extinguished" state), no invented text or brands (matchboxes, labels), the
   logo only from the real file.
@@ -102,7 +116,7 @@ must be genuinely different from the ones before.
 2. Luxury does not show the kitchen. We never show pouring or making; we show
    the finished candle, the box and the moment.
 3. Scent changes how a place feels. That is the whole promise, nothing more
-   (never "removes smells" or "cleans the air").
+   (a pleasant scent replacing a bad smell is fine, per Ali).
 
 ## Off limits
 
@@ -138,7 +152,7 @@ No prices, customer counts, reviews or results exist yet. Ask Ali; never invent.
 - **Allowed now:** a question to answer in the comments («شو ريحتك المفضلة؟»),
   a share ask («ابعتها لحدا بيحبها»), and the launch line («قريباً. آخر تشرين
   الثاني»).
-- **Keyword CTA:** yes, Ali wants one. Word not chosen yet (proposed: «ريم»).
+- **Keyword CTA:** «ريم», approved, but used ONLY after orders open.
   The commenter gets a reply when orders open; Ali sends every reply himself.
 - **Link:** reemcandles.com (coming soon page with a countdown).
 - **Contact:** WhatsApp +961 70 662 567, support@reemcandles.com.

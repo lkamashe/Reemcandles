@@ -24,7 +24,7 @@ Contacts and handles:
 All candles are cream-white wax, palm-sized to medium, with gold leaf accents. Every candle contains 20 percent natural beeswax (this can be written in marketing). Candles cure for 7 days before sale. Every candle has an engraved ID number under the base (رقم تعريفي).
 Fragrance oils are imported from Grasse, France (مدينة غراس الفرنسية). This can be written.
 
-Current shapes (use these exact descriptions, never invent a shape):
+Current shapes (Ali chooses the shape and supplies the reference images for every video; these descriptions are background only):
 1. Rose cone (tree): an ivory cone built from overlapping tiers of 3D roses and small leaves, gold leaf on the leaves and some rose edges. About 12 cm tall and 6 cm wide at the base. Plain cotton wick at the top tip. It is NOT a pillar.
 2. Gold relief pillar: a tall cream pillar with a raised diagonal band of gold leaf relief up one side, about 12 cm tall and 6 cm wide. It does NOT glow in the dark.
 3. Floral pillar: cream pillar with carved floral petals and gold flakes, with glow-in-the-dark pigment (glows green in the dark). Still in testing.
@@ -37,11 +37,11 @@ Claims rules:
 - Never write "hand-carved" or "hand-sculpted" (نحت يدوي، منحوتة باليد).
 - Never write "بإيدين لبنانية" or "Lebanese hands".
 - The brand has a materials certificate and an inspection certificate. Do not state who issued them or what exactly they cover. Only say what Ali has stated: certified materials and inspected products.
-- Do not claim a candle removes odors, smoke or smells. A candle changes the atmosphere with a pleasant scent. Nothing more.
+- UPDATED by Ali (Nov 2026): a story where a bad smell is replaced by the candle's pleasant scent is fine. Do not overthink claims.
 
 ## 3. The packaging (must be described exactly)
 
-The gift box is LOW and FLAT, not tall. About 15 x 15 cm and about 8 cm high, almost square from above, small enough to carry in one hand. Deep matte olive green, no lid. It is a sleeve with a drawer that slides out horizontally from the front.
+The gift box is LOW and FLAT, not tall. About 22 cm long, 15 cm wide and 10 cm high (updated by Ali, Nov 2026), small enough to carry in one hand. Deep matte olive green, no lid. It is a sleeve with a drawer that slides out horizontally from the front.
 - Top face: a thin gold foil rectangular border and a gold circular emblem: a seated gazelle between two laurel branches, the word "reem" in gold script, and "HAND MADE CANDLES" under it.
 - Front face (the drawer front): the gold script words "Made with love" and an olive grosgrain pull tab loop in the center.
 - Inside: the candle lies on soft ivory crinkle paper.
@@ -57,7 +57,7 @@ The gift box is LOW and FLAT, not tall. About 15 x 15 cm and about 8 cm high, al
 
 ## 5. Voice and language rules
 
-- Spoken and caption language: Lebanese Arabic (عامية لبنانية), natural, warm, short sentences. English only for hashtags and the "HAND MADE CANDLES" tagline.
+- Spoken and caption language: Lebanese or Syrian (شامي) Arabic (updated by Ali), natural, warm, short sentences. English only for hashtags and the "HAND MADE CANDLES" tagline.
 - The message card uses formal Arabic (فصحى).
 - On-screen Arabic text: spelled correctly, clear, with NO tashkeel (no fatha, damma, kasra, shadda marks).
 - Never write follow calls to action ("تابعنا", "تابعونا", "follow us").
@@ -71,7 +71,7 @@ The gift box is LOW and FLAT, not tall. About 15 x 15 cm and about 8 cm high, al
 - Reels are 9:16, about 30 seconds (two 15-second AI clips joined into one file), with Arabic captions, light music and an end card with the logo and "قريباً".
 - Every prompt for his AI video tool must be fully detailed: scene, objects, motion, light, camera, exact ordered actions (who does what with which hand, object states such as candle unlit until the match lights it), and strong protection for the box logo.
 - Each new idea should be genuinely different from earlier ones, not a repeat.
-- When a video has people speaking, the speech is Lebanese Arabic, and the subtitles are burned in.
+- When a video has people speaking, the speech is Lebanese or Syrian (شامي) Arabic, and the subtitles are burned in.
 - Hook ideas should come from a real, specific, true thing about the brand, never invented numbers, clients or results.
 
 ## 7. What not to do (summary)
@@ -81,8 +81,8 @@ The gift box is LOW and FLAT, not tall. About 15 x 15 cm and about 8 cm high, al
 3. Do not describe the box as tall, with a lid, or with the logo on the front.
 4. Do not invent facts: no made-up numbers, certificates, customers or prices. Ask Ali.
 5. Do not use tashkeel, "تابعونا", "نحت يدوي", "بإيدين لبنانية", or "18K".
-6. Do not show smoke, cigarettes or vaping in any video or image.
-7. Do not promise that a candle cleans air or removes smells.
+6. Do not show cigarettes or vaping. Smoke (UPDATED by Ali): allowed when the idea needs it, but reem candles NEVER give black smoke. Black smoke is allowed only on another (non-reem) candle in a comparison.
+7. (UPDATED by Ali) The pleasant scent replacing a bad smell is fine; no need to police this.
 8. Do not publish or send anything on Ali's behalf. Write drafts only. Ali posts and replies himself.
 
 ## 8. Voice sample (for tone, not to copy)

@@ -15,17 +15,14 @@ Improvements to apply on top of the baseline:
   naming an object (smoke) can pull it into the frame. Keep the short STRICT
   RULES recap at the end.
 - Pre-flight checklist before handing any prompt to Ali (generation costs
-  money): brand.md claims (no smell removal, no clean air), no smoke anywhere
-  including references, exact product shape, box low/flat/drawer/logo on top,
+  money): no black smoke from a reem candle, product exactly as in Ali's
+  reference images, box low/flat/drawer 22x15x10 cm/logo on top,
   candle lit/unlit state per second, every spoken line in Lebanese with no
   tashkeel needed on screen, end frame defined, room left for on-screen text.
 
-Known issues to avoid next time (they break brand.md rule 7 / rule 6):
-- The story and the light shift ("stuffy, hazy air" -> "air looks clean and
-  clear", "clean airy feeling" in the room board) imply the candle removes
-  smells or cleans the air. Show a change of mood and warmth, not cleaner air.
-- "She shakes out the match" can generate a smoke wisp. Keep the match moving
-  out of frame instead.
+Note (Ali, Nov 2026): the bad-smell -> pleasant-scent story is fine. The box
+in these prompts says 15x15x8 cm; the correct size is 22x15x10 cm. A match
+or wick may smoke lightly if the idea needs it, never black smoke from reem.
 
 ## Video prompt structure (one prompt per 15 s clip)
 
