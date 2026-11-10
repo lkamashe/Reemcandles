@@ -19,6 +19,10 @@ STATUS: DRAFT, waiting for Ali's approval.
    is wrong, say "this one is not good" and give a complete, standalone prompt
    for a new one (never "change this part of the old prompt"). Say exactly
    which images to attach to each prompt.
+8. DEFAULT OUTPUT (Ali, 10 Nov 2026): from now on give ONLY the video idea and
+   its key points (story, dialogue, hook, what matters). No image prompts, no
+   video prompts, no edit plans, no reviews unless Ali asks for them.
+   Keep replies short.
 
 The full brand rules live in `brand.md` next to this file. Read both before
 writing anything. When this file and `brand.md` disagree, `brand.md` wins.
