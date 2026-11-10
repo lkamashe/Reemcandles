@@ -19,10 +19,15 @@ STATUS: DRAFT, waiting for Ali's approval.
    is wrong, say "this one is not good" and give a complete, standalone prompt
    for a new one (never "change this part of the old prompt"). Say exactly
    which images to attach to each prompt.
-8. DEFAULT OUTPUT (Ali, 10 Nov 2026): from now on give ONLY the video idea and
-   its key points (story, dialogue, hook, what matters). No image prompts, no
-   video prompts, no edit plans, no reviews unless Ali asks for them.
-   Keep replies short.
+8. DEFAULT OUTPUT (Ali, 10 Nov 2026): give the video IDEA, fully detailed in
+   the FIRST message (Ali turns it into prompts himself): the whole story, the
+   exact first frame (who/what is where, distances in cm, which way each
+   object faces), every action and every spoken line with its exact seconds
+   for both 15 s parts, the end frames, camera, light, sound, the on-screen
+   hook text, and the full list of reference images (new / existing / taken
+   from the video). Object specs with numbers (box 22x15x10, which face shows,
+   how it is held). No image or video prompts, edit plans or reviews unless
+   Ali asks.
 
 The full brand rules live in `brand.md` next to this file. Read both before
 writing anything. When this file and `brand.md` disagree, `brand.md` wins.
