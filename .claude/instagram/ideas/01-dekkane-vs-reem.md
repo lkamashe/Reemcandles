@@ -241,3 +241,12 @@ STRICT RULES: Speak only the five lines above, exactly as written, in Lebanese A
 
 Only change from v2: the sister (standing on the right, next to the red jar)
 slides the jar away, because the brother on the left cannot reach it.
+
+## Edit plan (sent to Ali)
+
+Total about 31 s: part 1 cut (13.8 s) + part 2 (15 s) + end card (2.5 s).
+Hard cut between parts (same frame). Hook text «مش كل شمعة شمعة» 0–2.5 s at
+the top. Burned Lebanese subtitles, no tashkeel, gold keyword, no empty boxes.
+Light music low under the voices, quieter while anyone speaks. End card 2.5 s:
+logo, قريباً, آخر تشرين الثاني, @reemcandles.co. If R001 is not sharp in part 2,
+cover ~1 s with refs/idea01-id-number-closeup-R001.jpg.
