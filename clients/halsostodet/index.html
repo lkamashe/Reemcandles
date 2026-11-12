@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HälsoStödet – Massage, Reset-behandling och coaching i Uppsala</title>
+<meta name="description" content="HälsoStödet på Skolgatan 31 i Uppsala: djupgående massage, Reset-behandling, coaching, samtalsterapi och kostrådgivning. I över 20 år.">
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#FBF8F5; --surface:#FFFFFF; --ink:#1F1B1D; --muted:#6B6266;
+  --line:#ECE4E0; --pink:#C2477F; --pink-soft:#F7E6EE; --sage:#E9EEE7;
+  --radius:18px; --max:1120px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;line-height:1.15;margin:0 0 .5em}
+h1{font-size:clamp(2.4rem,5.5vw,4rem)}
+h2{font-size:clamp(2rem,4vw,2.8rem)}
+h3{font-size:1.55rem}
+p{margin:0 0 1em}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+.eyebrow{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--pink);font-weight:600;margin-bottom:.8em}
+.btn{display:inline-flex;align-items:center;gap:.5em;padding:.85em 1.5em;border-radius:999px;text-decoration:none;font-weight:600;font-size:.95rem;transition:transform .15s,background .15s}
+.btn:hover{transform:translateY(-1px)}
+.btn-primary{background:var(--ink);color:#fff}
+.btn-primary:hover{background:#3a3236}
+.btn-ghost{border:1.5px solid var(--ink)}
+.btn-ghost:hover{background:var(--surface)}
+
+/* header */
+header{position:sticky;top:0;z-index:20;background:rgba(251,248,245,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:72px;gap:16px}
+.nav img{height:44px;width:auto}
+.nav ul{display:flex;gap:28px;list-style:none;margin:0;padding:0;font-size:.95rem}
+.nav ul a{text-decoration:none;color:var(--muted)}
+.nav ul a:hover{color:var(--ink)}
+@media (max-width:820px){.nav ul{display:none}.nav .btn{padding:.7em 1.1em}}
+
+/* notice */
+.notice{background:var(--pink-soft);font-size:.92rem;text-align:center;padding:10px 20px}
+.notice a{font-weight:600}
+
+/* hero */
+.hero{padding:72px 0 56px;position:relative;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
+.hero p.lead{font-size:1.15rem;color:var(--muted);max-width:34em}
+.hero .actions{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0 22px}
+.rating{display:flex;align-items:center;gap:10px;font-size:.92rem;color:var(--muted)}
+.stars{color:#D4A017;letter-spacing:2px}
+.hero-photo{position:relative}
+.hero-photo img.portrait{border-radius:200px 200px var(--radius) var(--radius);aspect-ratio:4/5;object-fit:cover;width:100%;box-shadow:0 30px 60px -30px rgba(80,30,50,.35)}
+.hero-photo .badge{position:absolute;left:-18px;bottom:28px;background:var(--surface);border-radius:14px;padding:14px 18px;box-shadow:0 12px 30px -12px rgba(0,0,0,.2);font-size:.88rem}
+.hero-photo .badge strong{display:block;font-family:"Cormorant Garamond",serif;font-size:1.6rem;line-height:1}
+@media (max-width:820px){.hero{padding:40px 0}.hero-grid{grid-template-columns:1fr;gap:36px}.hero-photo{max-width:380px}.hero-photo .badge{left:12px}}
+
+/* sections */
+section{padding:88px 0}
+.alt{background:var(--surface)}
+.section-head{max-width:640px;margin-bottom:44px}
+.section-head p{color:var(--muted)}
+
+/* reset method */
+.method{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.method .flower{border-radius:var(--radius);aspect-ratio:4/3;object-fit:cover;width:100%}
+.method blockquote{margin:24px 0 0;padding-left:18px;border-left:3px solid var(--pink);color:var(--muted);font-style:italic}
+@media (max-width:820px){.method{grid-template-columns:1fr;gap:28px}}
+
+/* services */
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.card{background:var(--bg);border:1px solid var(--line);border-radius:var(--radius);padding:30px;display:flex;flex-direction:column}
+.alt .card{background:var(--bg)}
+.card p{color:var(--muted);font-size:.97rem}
+.card .from{margin-top:auto;font-weight:600;font-size:.95rem}
+.card .from span{color:var(--muted);font-weight:400}
+@media (max-width:820px){.cards{grid-template-columns:1fr}}
+
+/* recognise */
+.recognise{background:var(--sage);border-radius:var(--radius);padding:44px;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.recognise ul{margin:0;padding:0;list-style:none}
+.recognise li{padding:12px 0;border-bottom:1px solid rgba(0,0,0,.08);font-size:1.05rem}
+.recognise li:last-child{border:0}
+@media (max-width:820px){.recognise{grid-template-columns:1fr;padding:28px}}
+
+/* prices */
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px}
+.tab{border:1.5px solid var(--line);background:var(--surface);border-radius:999px;padding:.55em 1.1em;font:inherit;font-size:.92rem;cursor:pointer;color:var(--muted)}
+.tab[aria-selected="true"]{background:var(--ink);color:#fff;border-color:var(--ink)}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.panel[hidden]{display:none}
+.row{display:grid;grid-template-columns:1fr auto auto;gap:18px;padding:16px 24px;border-bottom:1px solid var(--line);align-items:center}
+.row:last-child{border:0}
+.row .dur{color:var(--muted);font-size:.9rem;white-space:nowrap}
+.row .price{font-weight:600;white-space:nowrap;min-width:80px;text-align:right}
+.price-note{font-size:.9rem;color:var(--muted);margin-top:16px}
+@media (max-width:560px){.row{grid-template-columns:1fr auto;padding:14px 18px}.row .dur{grid-column:1;grid-row:2;margin-top:-10px}}
+
+/* team */
+.team{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.person{display:grid;grid-template-columns:150px 1fr;gap:22px;align-items:center;background:var(--bg);border:1px solid var(--line);border-radius:var(--radius);padding:22px}
+.person img{border-radius:14px;aspect-ratio:4/5;object-fit:cover;width:150px}
+.person .titles{color:var(--muted);font-size:.92rem;margin-bottom:.8em}
+.person a{font-size:.92rem;display:block;text-decoration:none;color:var(--pink)}
+@media (max-width:820px){.team{grid-template-columns:1fr}}
+@media (max-width:420px){.person{grid-template-columns:1fr}.person img{width:100%;max-width:220px}}
+
+/* contact */
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.box{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:30px}
+.hours{width:100%;border-collapse:collapse;font-size:.97rem}
+.hours td{padding:8px 0;border-bottom:1px solid var(--line)}
+.hours td:last-child{text-align:right;color:var(--muted)}
+.hours tr:last-child td{border:0}
+.contact dl{margin:0}
+.contact dt{font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-top:16px}
+.contact dd{margin:2px 0 0;font-size:1.05rem}
+.contact dd a{text-decoration:none}
+@media (max-width:820px){.contact{grid-template-columns:1fr}}
+
+footer{border-top:1px solid var(--line);padding:36px 0;font-size:.88rem;color:var(--muted)}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:center}
+footer img{height:34px}
+footer nav{display:flex;gap:18px}
+footer a{text-decoration:none}
+</style>
+</head>
+<body>
+
+<div class="notice">
+  <strong>Ny kund?</strong> Caroline har just nu väntelista. Skicka ett SMS till
+  <a href="sms:+46707556869">0707-55 68 69</a> eller mejla
+  <a href="mailto:caroline@halsostodet.nu">caroline@halsostodet.nu</a>.
+</div>
+
+<header>
+  <div class="wrap nav">
+    <a href="#top" aria-label="HälsoStödet, till startsidan"><img src="assets/logo.png" alt="HälsoStödet"></a>
+    <ul>
+      <li><a href="#behandlingar">Behandlingar</a></li>
+      <li><a href="#priser">Priser</a></li>
+      <li><a href="#om-oss">Om oss</a></li>
+      <li><a href="#kontakt">Kontakt</a></li>
+    </ul>
+    <a class="btn btn-primary" href="https://www.bokadirekt.se/places/halsostodet-ab-caroline-5514" target="_blank" rel="noopener">Boka tid</a>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">Skolgatan 31 · Uppsala</div>
+      <h1>Balansera ditt liv. För en starkare kropp och ett friskare sinne.</h1>
+      <p class="lead">Djupgående massage, Reset-behandling, coaching, samtalsterapi och kostrådgivning. Vi ser till hela människan, inte bara till symptomen.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="https://www.bokadirekt.se/places/halsostodet-ab-caroline-5514" target="_blank" rel="noopener">Boka tid på Bokadirekt</a>
+        <a class="btn btn-ghost" href="#kontakt">Kontakta oss</a>
+      </div>
+      <div class="rating"><span class="stars" aria-hidden="true">★★★★★</span> 4,9 av 5 · 186 betyg på Bokadirekt</div>
+    </div>
+    <div class="hero-photo">
+      <img class="portrait" src="assets/caroline.jpg" alt="Caroline Monthan, grundare av HälsoStödet">
+      <div class="badge"><strong>20+ år</strong>av erfarenhet i Uppsala</div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="metoden">
+  <div class="wrap method">
+    <img class="flower" src="assets/magnolia.png" alt="">
+    <div>
+      <div class="eyebrow">Vårt arbetssätt</div>
+      <h2>Human Systemic Reset™</h2>
+      <p>Vi arbetar utifrån ett helhetsperspektiv där kropp, nervsystem, emotionella mönster och belastning ses som delar av samma system.</p>
+      <p>Många symptom uppstår inte isolerat. De hänger ofta ihop genom långvarig stress och kompensation. Därför arbetar vi inte bara med symptomen, utan med att förstå och stödja hela människans system.</p>
+      <blockquote>Vi inspirerar och hjälper dig till ett friskare liv.</blockquote>
+    </div>
+  </div>
+</section>
+
+<section id="behandlingar">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Behandlingar</div>
+      <h2>Stöd för både kropp och sinne</h2>
+      <p>Varje behandling anpassas efter dig. I alla kroppsbehandlingar ingår råd om övningar, så att besvären inte kommer tillbaka.</p>
+    </div>
+    <div class="cards">
+      <article class="card">
+        <h3>Djupgående massage &amp; Reset-behandling</h3>
+        <p>Vår egenutvecklade metod Resetbycm™ behandlar långsamt och på djupet de obalanser som ligger bakom besvären. Behandlingen görs ovanpå kläderna och hjälper kroppen tillbaka till en naturlig hållning, rörlighet och cirkulation.</p>
+        <div class="from"><span>Från</span> 720 kr · 30–90 min</div>
+      </article>
+      <article class="card">
+        <h3>Coaching &amp; samtalsterapi</h3>
+        <p>Målfokuserade samtal med konkreta mentala verktyg för att förstå dina mönster, komma förbi hinder och nå dina mål. På plats eller via video och telefon.</p>
+        <div class="from"><span>Från</span> 835 kr · 45–120 min</div>
+      </article>
+      <article class="card">
+        <h3>Kostrådgivning</h3>
+        <p>Kostråd anpassade efter dina behov och mål. Inför första besöket för du matdagbok i ungefär en vecka, så att vi kan planera utifrån din vardag.</p>
+        <div class="from"><span>Från</span> 720 kr · 30–60 min</div>
+      </article>
+      <article class="card">
+        <h3>Hälsokonsultation &amp; rehabträning</h3>
+        <p>Vi går igenom vikt, energi, sömn, kost och träning, och tar fram individuellt anpassad träning som återställer och stärker kroppens funktion.</p>
+        <div class="from"><span>Från</span> 720 kr · 30–60 min</div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <div class="recognise">
+      <div>
+        <div class="eyebrow">Känner du igen dig?</div>
+        <h2>Att fastna i samma mönster</h2>
+        <p>Testa vår kostnadsfria startövning i hur du identifierar och förändrar dina mönster.</p>
+        <a class="btn btn-primary" href="https://halsostodet.aweb.page/p/43b31ea9-4b48-4ac5-99c2-e9b6fc226d4b" target="_blank" rel="noopener">Gör startövningen gratis</a>
+      </div>
+      <ul>
+        <li>Du fastnar i samma reaktioner, gång på gång.</li>
+        <li>Du förstår dina mönster men reagerar ändå automatiskt.</li>
+        <li>Du bär stress eller spänningar som inte riktigt släpper.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="priser">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Prislista</div>
+      <h2>Priser</h2>
+    </div>
+    <div class="tabs" role="tablist">
+      <button class="tab" role="tab" aria-selected="true" aria-controls="p-massage" id="t-massage">Massage</button>
+      <button class="tab" role="tab" aria-selected="false" aria-controls="p-coaching" id="t-coaching">Coaching &amp; samtal</button>
+      <button class="tab" role="tab" aria-selected="false" aria-controls="p-kost" id="t-kost">Kost &amp; hälsa</button>
+    </div>
+
+    <div class="panel" role="tabpanel" id="p-massage" aria-labelledby="t-massage">
+      <div class="row"><div>Djupbehandlande massage, Reset-behandling</div><div class="dur">30 min</div><div class="price">720 kr</div></div>
+      <div class="row"><div>Djupbehandlande massage, Reset-behandling</div><div class="dur">45 min</div><div class="price">860 kr</div></div>
+      <div class="row"><div>Djupbehandlande massage, Reset-behandling</div><div class="dur">60 min</div><div class="price">1 020 kr</div></div>
+      <div class="row"><div>Djupbehandlande massage, Reset-behandling</div><div class="dur">90 min</div><div class="price">1 720 kr</div></div>
+    </div>
+
+    <div class="panel" role="tabpanel" id="p-coaching" aria-labelledby="t-coaching" hidden>
+      <div class="row"><div>Coaching via video/telefon</div><div class="dur">45 min</div><div class="price">835 kr</div></div>
+      <div class="row"><div>Coaching via video/telefon</div><div class="dur">60 min</div><div class="price">990 kr</div></div>
+      <div class="row"><div>Coaching</div><div class="dur">60 min</div><div class="price">990 kr</div></div>
+      <div class="row"><div>Coaching</div><div class="dur">90 min</div><div class="price">1 720 kr</div></div>
+      <div class="row"><div>Coaching</div><div class="dur">120 min</div><div class="price">1 980 kr</div></div>
+      <div class="row"><div>Samtalsterapi</div><div class="dur">60 min</div><div class="price">990 kr</div></div>
+      <div class="row"><div>Samtalsterapi</div><div class="dur">90 min</div><div class="price">1 690 kr</div></div>
+    </div>
+
+    <div class="panel" role="tabpanel" id="p-kost" aria-labelledby="t-kost" hidden>
+      <div class="row"><div>Hälsokonsultation</div><div class="dur">30 min</div><div class="price">720 kr</div></div>
+      <div class="row"><div>Hälsokonsultation</div><div class="dur">60 min</div><div class="price">1 020 kr</div></div>
+      <div class="row"><div>Telefonrådgivning</div><div class="dur">30 min</div><div class="price">700 kr</div></div>
+      <div class="row"><div>Kostrådgivning, första besöket (60 min + 30 min planering)</div><div class="dur">60 min</div><div class="price">1 720 kr</div></div>
+      <div class="row"><div>Kostrådgivning, uppföljning</div><div class="dur">30 min</div><div class="price">720 kr</div></div>
+      <div class="row"><div>Kostrådgivning, uppföljning</div><div class="dur">60 min</div><div class="price">1 020 kr</div></div>
+      <div class="row"><div>Kostrådgivning via telefon</div><div class="dur">30 min</div><div class="price">720 kr</div></div>
+      <div class="row"><div>Kostrådgivning via telefon</div><div class="dur">60 min</div><div class="price">1 020 kr</div></div>
+    </div>
+    <p class="price-note">Är du gravid? Vi anpassar självklart behandlingen efter dig. Boka tid på Bokadirekt eller kontakta oss.</p>
+  </div>
+</section>
+
+<section class="alt" id="om-oss">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Om oss</div>
+      <h2>Vi som arbetar här</h2>
+      <p>HälsoStödet har hjälpt människor i Uppsala att hitta balans i över 20 år. Vi har gedigen utbildning, lång erfarenhet och en helhetssyn på hälsa.</p>
+    </div>
+    <div class="team">
+      <div class="person">
+        <img src="assets/caroline.jpg" alt="Caroline Monthan">
+        <div>
+          <h3>Caroline Monthan</h3>
+          <div class="titles">Dipl. friskvårdskonsult · Cert. resetterapeut · Dipl. samtalsterapeut</div>
+          <a href="sms:+46707556869">0707-55 68 69</a>
+          <a href="mailto:caroline@halsostodet.nu">caroline@halsostodet.nu</a>
+        </div>
+      </div>
+      <div class="person">
+        <img src="assets/anki.jpg" alt="Anki Borg">
+        <div>
+          <h3>Anki Borg</h3>
+          <div class="titles">Dipl. hälsopedagog · Massageterapeut</div>
+          <a href="tel:+46737859776">073-785 97 76</a>
+          <a href="mailto:info@halsostodet.nu">info@halsostodet.nu</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="kontakt">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Kontakt</div>
+      <h2>Välkommen till Skolgatan 31</h2>
+      <p>Det snabbaste sättet att nå oss är via SMS eller mejl.</p>
+    </div>
+    <div class="contact">
+      <div class="box">
+        <dl>
+          <dt>Adress</dt>
+          <dd><a href="https://maps.google.com/?q=Skolgatan+31,+753+11+Uppsala" target="_blank" rel="noopener">Skolgatan 31, 753 11 Uppsala</a></dd>
+          <dt>SMS / telefon</dt>
+          <dd><a href="sms:+46707556869">0707-55 68 69</a></dd>
+          <dt>E-post</dt>
+          <dd><a href="mailto:caroline@halsostodet.nu">caroline@halsostodet.nu</a></dd>
+          <dt>Följ oss</dt>
+          <dd><a href="https://www.instagram.com/halsostodet/" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.facebook.com/halsostodet/?locale=sv_SE" target="_blank" rel="noopener">Facebook</a></dd>
+        </dl>
+        <p style="margin-top:24px"><a class="btn btn-primary" href="https://www.bokadirekt.se/places/halsostodet-ab-caroline-5514" target="_blank" rel="noopener">Boka tid</a></p>
+      </div>
+      <div class="box">
+        <h3>Öppettider</h3>
+        <table class="hours">
+          <tr><td>Måndag</td><td>09–15</td></tr>
+          <tr><td>Tisdag</td><td>09–15</td></tr>
+          <tr><td>Onsdag</td><td>09–15</td></tr>
+          <tr><td>Torsdag</td><td>09–14</td></tr>
+          <tr><td>Fredag</td><td>09–14</td></tr>
+          <tr><td>Lördag–söndag</td><td>Stängt</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <img src="assets/logo.png" alt="HälsoStödet">
+    <nav>
+      <a href="https://www.halsostodet.nu/integritetspolicy2/">Integritetspolicy</a>
+      <a href="https://www.halsostodet.nu/villkor-och-foreskrifter2/">Villkor</a>
+    </nav>
+    <div>© <span id="y">2026</span> HälsoStödet AB</div>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('.tab').forEach(function(tab){
+  tab.addEventListener('click',function(){
+    document.querySelectorAll('.tab').forEach(function(t){t.setAttribute('aria-selected','false')});
+    document.querySelectorAll('.panel').forEach(function(p){p.hidden=true});
+    tab.setAttribute('aria-selected','true');
+    document.getElementById(tab.getAttribute('aria-controls')).hidden=false;
+  });
+});
+document.getElementById('y').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
