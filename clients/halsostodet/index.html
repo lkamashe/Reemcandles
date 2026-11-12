@@ -3,343 +3,452 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>HälsoStödet – Massage, Reset-behandling och coaching i Uppsala</title>
-<meta name="description" content="HälsoStödet på Skolgatan 31 i Uppsala: djupgående massage, Reset-behandling, coaching, samtalsterapi och kostrådgivning. I över 20 år.">
+<title>HälsoStödet – Reset-behandling, massage och coaching i Uppsala</title>
+<meta name="description" content="HälsoStödet på Skolgatan 31 i Uppsala. Djupgående massage, Reset-behandling, coaching, samtalsterapi och kostrådgivning utifrån Human Systemic Reset™. I över 20 år.">
 <link rel="icon" href="assets/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#FBF8F5; --surface:#FFFFFF; --ink:#1F1B1D; --muted:#6B6266;
-  --line:#ECE4E0; --pink:#C2477F; --pink-soft:#F7E6EE; --sage:#E9EEE7;
-  --radius:18px; --max:1120px;
+  --plum:#2A1D27; --plum-2:#1E141C; --ivory:#F8F3EE; --paper:#FFFDFB;
+  --ink:#231A20; --muted:#7A6C73; --rose:#C98BA6; --blush:#F1E3E9;
+  --gold:#BFA27A; --line:rgba(35,26,32,.12); --line-light:rgba(248,243,238,.18);
+  --max:1200px; --ease:cubic-bezier(.2,.7,.2,1);
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+body{margin:0;background:var(--ivory);color:var(--ink);font:300 17px/1.75 Jost,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
 img{max-width:100%;display:block}
 a{color:inherit}
-h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;line-height:1.15;margin:0 0 .5em}
-h1{font-size:clamp(2.4rem,5.5vw,4rem)}
-h2{font-size:clamp(2rem,4vw,2.8rem)}
-h3{font-size:1.55rem}
-p{margin:0 0 1em}
-.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
-.eyebrow{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--pink);font-weight:600;margin-bottom:.8em}
-.btn{display:inline-flex;align-items:center;gap:.5em;padding:.85em 1.5em;border-radius:999px;text-decoration:none;font-weight:600;font-size:.95rem;transition:transform .15s,background .15s}
-.btn:hover{transform:translateY(-1px)}
-.btn-primary{background:var(--ink);color:#fff}
-.btn-primary:hover{background:#3a3236}
-.btn-ghost{border:1.5px solid var(--ink)}
-.btn-ghost:hover{background:var(--surface)}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;line-height:1.08;margin:0 0 .45em;letter-spacing:-.01em}
+h1{font-size:clamp(2.9rem,7vw,5.6rem)}
+h2{font-size:clamp(2.2rem,4.6vw,3.6rem)}
+h3{font-size:clamp(1.5rem,2.4vw,1.9rem)}
+em{font-style:italic;color:var(--rose)}
+p{margin:0 0 1.1em}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+.kicker{display:flex;align-items:center;gap:14px;font:500 .74rem/1 Jost,sans-serif;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);margin-bottom:26px}
+.kicker::before{content:"";width:38px;height:1px;background:currentColor}
+.btn{display:inline-flex;align-items:center;gap:.7em;padding:1.05em 1.9em;font:500 .8rem/1 Jost,sans-serif;letter-spacing:.18em;text-transform:uppercase;text-decoration:none;border:1px solid currentColor;transition:background .35s var(--ease),color .35s var(--ease)}
+.btn-solid{background:var(--ivory);color:var(--plum);border-color:var(--ivory)}
+.btn-solid:hover{background:transparent;color:var(--ivory)}
+.btn-line{color:var(--ivory)}
+.btn-line:hover{background:var(--ivory);color:var(--plum)}
+.btn-dark{background:var(--plum);color:var(--ivory);border-color:var(--plum)}
+.btn-dark:hover{background:transparent;color:var(--plum)}
+.arrow{transition:transform .3s var(--ease)}
+.btn:hover .arrow{transform:translateX(4px)}
 
-/* header */
-header{position:sticky;top:0;z-index:20;background:rgba(251,248,245,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-.nav{display:flex;align-items:center;justify-content:space-between;height:72px;gap:16px}
-.nav img{height:44px;width:auto}
-.nav ul{display:flex;gap:28px;list-style:none;margin:0;padding:0;font-size:.95rem}
-.nav ul a{text-decoration:none;color:var(--muted)}
-.nav ul a:hover{color:var(--ink)}
-@media (max-width:820px){.nav ul{display:none}.nav .btn{padding:.7em 1.1em}}
+/* reveal */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity 1s var(--ease),transform 1s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
 
 /* notice */
-.notice{background:var(--pink-soft);font-size:.92rem;text-align:center;padding:10px 20px}
-.notice a{font-weight:600}
+.notice{background:var(--plum-2);color:rgba(248,243,238,.8);font-size:.84rem;text-align:center;padding:11px 20px;letter-spacing:.02em}
+.notice a{color:var(--ivory)}
+
+/* header */
+header{position:sticky;top:0;z-index:30;color:var(--ivory);background:var(--plum);transition:background .3s}
+header.solid{background:rgba(30,20,28,.96);backdrop-filter:blur(12px);border-bottom:1px solid var(--line-light)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:86px;gap:20px}
+header.solid .nav{height:68px}
+.logo img{height:46px;width:auto;filter:brightness(0) invert(1)}
+header.solid .logo img{height:38px}
+.nav ul{display:flex;gap:34px;list-style:none;margin:0;padding:0;font-size:.78rem;letter-spacing:.2em;text-transform:uppercase}
+.nav ul a{text-decoration:none;opacity:.8;transition:opacity .2s}
+.nav ul a:hover{opacity:1}
+.nav .btn{padding:.85em 1.4em}
+@media (max-width:900px){.nav ul{display:none}}
 
 /* hero */
-.hero{padding:72px 0 56px;position:relative;overflow:hidden}
-.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
-.hero p.lead{font-size:1.15rem;color:var(--muted);max-width:34em}
-.hero .actions{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0 22px}
-.rating{display:flex;align-items:center;gap:10px;font-size:.92rem;color:var(--muted)}
-.stars{color:#D4A017;letter-spacing:2px}
-.hero-photo{position:relative}
-.hero-photo img.portrait{border-radius:200px 200px var(--radius) var(--radius);aspect-ratio:4/5;object-fit:cover;width:100%;box-shadow:0 30px 60px -30px rgba(80,30,50,.35)}
-.hero-photo .badge{position:absolute;left:-18px;bottom:28px;background:var(--surface);border-radius:14px;padding:14px 18px;box-shadow:0 12px 30px -12px rgba(0,0,0,.2);font-size:.88rem}
-.hero-photo .badge strong{display:block;font-family:"Cormorant Garamond",serif;font-size:1.6rem;line-height:1}
-@media (max-width:820px){.hero{padding:40px 0}.hero-grid{grid-template-columns:1fr;gap:36px}.hero-photo{max-width:380px}.hero-photo .badge{left:12px}}
+.hero{position:relative;min-height:calc(100svh - 128px);display:grid;grid-template-columns:1.05fr .95fr;background:var(--plum);color:var(--ivory)}
+.hero-text{display:flex;flex-direction:column;justify-content:center;padding:70px 64px 80px max(24px,calc((100vw - var(--max))/2 + 24px))}
+.hero-text p{font-size:1.12rem;color:rgba(248,243,238,.72);max-width:30em}
+.hero .actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:18px}
+.hero-img{position:relative;overflow:hidden}
+.hero-img img{width:100%;height:100%;object-fit:cover;transform:scale(1.04);animation:settle 2.4s var(--ease) forwards}
+@keyframes settle{to{transform:scale(1)}}
+.hero-img::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--plum) 0%,rgba(42,29,39,0) 28%)}
+.hero-meta{display:flex;gap:42px;margin-top:64px;padding-top:28px;border-top:1px solid var(--line-light);flex-wrap:wrap}
+.hero-meta div{font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(248,243,238,.6)}
+.hero-meta strong{display:block;font:500 2rem/1.1 "Cormorant Garamond",serif;letter-spacing:0;text-transform:none;color:var(--ivory)}
+@media (max-width:900px){
+  .hero{grid-template-columns:1fr;min-height:auto}
+  .hero-img{order:-1;height:56vh}
+  .hero-img::after{background:linear-gradient(0deg,var(--plum) 0%,rgba(42,29,39,0) 45%)}
+  .hero-text{padding:0 24px 64px;margin-top:-70px;position:relative;z-index:2}
+  .hero-meta{gap:28px;margin-top:44px}
+}
 
-/* sections */
-section{padding:88px 0}
-.alt{background:var(--surface)}
-.section-head{max-width:640px;margin-bottom:44px}
-.section-head p{color:var(--muted)}
+/* ribbon */
+.ribbon{background:var(--plum-2);color:rgba(248,243,238,.55);overflow:hidden;border-top:1px solid var(--line-light)}
+.ribbon-track{display:flex;gap:56px;white-space:nowrap;padding:20px 0;font:italic 400 1.5rem "Cormorant Garamond",serif;animation:scroll 40s linear infinite;width:max-content}
+.ribbon-track span::after{content:"✦";font-style:normal;font-size:.7rem;color:var(--gold);margin-left:56px;vertical-align:middle}
+@keyframes scroll{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.ribbon-track{animation:none}}
 
-/* reset method */
-.method{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
-.method .flower{border-radius:var(--radius);aspect-ratio:4/3;object-fit:cover;width:100%}
-.method blockquote{margin:24px 0 0;padding-left:18px;border-left:3px solid var(--pink);color:var(--muted);font-style:italic}
-@media (max-width:820px){.method{grid-template-columns:1fr;gap:28px}}
+section{padding:130px 0}
+@media (max-width:900px){section{padding:84px 0}}
 
-/* services */
-.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
-.card{background:var(--bg);border:1px solid var(--line);border-radius:var(--radius);padding:30px;display:flex;flex-direction:column}
-.alt .card{background:var(--bg)}
-.card p{color:var(--muted);font-size:.97rem}
-.card .from{margin-top:auto;font-weight:600;font-size:.95rem}
-.card .from span{color:var(--muted);font-weight:400}
-@media (max-width:820px){.cards{grid-template-columns:1fr}}
+/* philosophy */
+.philosophy{display:grid;grid-template-columns:.9fr 1.1fr;gap:90px;align-items:center}
+.philosophy .frame{position:relative;max-width:420px;justify-self:center}
+.philosophy .frame img{width:100%;aspect-ratio:3/4;object-fit:cover}
+.philosophy .frame::before{content:"";position:absolute;inset:-18px 18px 18px -18px;border:1px solid var(--gold);z-index:-1}
+.philosophy .lead{font:400 clamp(1.5rem,2.4vw,1.95rem)/1.45 "Cormorant Garamond",serif;color:var(--ink);margin-bottom:1.2em}
+.philosophy p{color:var(--muted)}
+@media (max-width:900px){.philosophy{grid-template-columns:1fr;gap:56px}.philosophy .frame{max-width:420px;margin-left:18px}}
+
+/* treatments */
+.treat{background:var(--paper)}
+.treat-head{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:60px;flex-wrap:wrap}
+.treat-head p{max-width:30em;color:var(--muted);margin:0}
+.t-item{border-top:1px solid var(--line)}
+.t-item:last-child{border-bottom:1px solid var(--line)}
+.t-item summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:90px 1fr auto 40px;align-items:center;gap:24px;padding:34px 0}
+.t-item summary::-webkit-details-marker{display:none}
+.t-num{font:italic 400 1.3rem "Cormorant Garamond",serif;color:var(--gold)}
+.t-item h3{margin:0;transition:color .3s}
+.t-item summary:hover h3{color:var(--rose)}
+.t-price{font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);white-space:nowrap}
+.t-plus{width:40px;height:40px;border:1px solid var(--line);border-radius:50%;position:relative;transition:transform .4s var(--ease),background .3s}
+.t-plus::before,.t-plus::after{content:"";position:absolute;left:50%;top:50%;width:12px;height:1px;background:var(--ink);transform:translate(-50%,-50%)}
+.t-plus::after{transform:translate(-50%,-50%) rotate(90deg)}
+details[open] .t-plus{transform:rotate(45deg);background:var(--blush)}
+.t-body{display:grid;grid-template-columns:90px 1fr 1fr;gap:24px;padding:0 0 40px}
+.t-body > div{grid-column:2/4;columns:2;column-gap:48px;color:var(--muted)}
+.t-body p{break-inside:avoid}
+@media (max-width:900px){
+  .t-item summary{grid-template-columns:44px 1fr 36px;gap:14px;padding:26px 0}
+  .t-price{grid-column:2;grid-row:2;margin-top:-6px}
+  .t-plus{grid-column:3;grid-row:1/3;width:36px;height:36px}
+  .t-body{grid-template-columns:1fr}
+  .t-body > div{grid-column:1;columns:1}
+}
+
+/* journey */
+.journey{background:var(--plum);color:var(--ivory)}
+.journey h2{max-width:14em}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:64px;border-top:1px solid var(--line-light)}
+.step{padding:40px 36px 10px 0;border-right:1px solid var(--line-light)}
+.step+.step{padding-left:36px}
+.step:last-child{border-right:0}
+.step .n{font:italic 400 3.4rem/1 "Cormorant Garamond",serif;color:var(--gold);margin-bottom:22px}
+.step p{color:rgba(248,243,238,.68);font-size:.98rem}
+.special{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:70px}
+.special div{border:1px solid var(--line-light);padding:34px}
+.special h3{font-size:1.5rem}
+.special p{color:rgba(248,243,238,.68);font-size:.97rem;margin:0}
+@media (max-width:900px){
+  .steps{grid-template-columns:1fr}.step,.step+.step{padding:30px 0;border-right:0;border-bottom:1px solid var(--line-light)}
+  .special{grid-template-columns:1fr}
+}
 
 /* recognise */
-.recognise{background:var(--sage);border-radius:var(--radius);padding:44px;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
-.recognise ul{margin:0;padding:0;list-style:none}
-.recognise li{padding:12px 0;border-bottom:1px solid rgba(0,0,0,.08);font-size:1.05rem}
-.recognise li:last-child{border:0}
-@media (max-width:820px){.recognise{grid-template-columns:1fr;padding:28px}}
+.recognise{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.recognise ol{list-style:none;margin:0;padding:0;counter-reset:r}
+.recognise li{counter-increment:r;display:grid;grid-template-columns:54px 1fr;padding:22px 0;border-bottom:1px solid var(--line);font:400 1.45rem/1.35 "Cormorant Garamond",serif}
+.recognise li::before{content:"0" counter(r);font:400 .8rem Jost,sans-serif;letter-spacing:.2em;color:var(--gold);padding-top:.5em}
+@media (max-width:900px){.recognise{grid-template-columns:1fr;gap:40px}}
+
+/* library */
+.library{background:var(--blush)}
+.lib-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.formats{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(35,26,32,.12);border:1px solid rgba(35,26,32,.12);margin:36px 0}
+.formats div{background:var(--blush);padding:24px}
+.formats strong{display:block;font:500 1.25rem "Cormorant Garamond",serif;margin-bottom:6px}
+.formats span{font-size:.92rem;color:var(--muted)}
+.book{position:relative}
+.book img{width:100%;max-width:520px;margin:auto;mix-blend-mode:multiply}
+@media (max-width:900px){.lib-grid{grid-template-columns:1fr;gap:40px}.formats{grid-template-columns:1fr}}
 
 /* prices */
-.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px}
-.tab{border:1.5px solid var(--line);background:var(--surface);border-radius:999px;padding:.55em 1.1em;font:inherit;font-size:.92rem;cursor:pointer;color:var(--muted)}
-.tab[aria-selected="true"]{background:var(--ink);color:#fff;border-color:var(--ink)}
-.panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.tabs{display:flex;gap:34px;border-bottom:1px solid var(--line);margin:50px 0 10px;overflow-x:auto}
+.tab{background:none;border:0;padding:0 0 16px;font:500 .78rem Jost,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);cursor:pointer;border-bottom:1px solid transparent;margin-bottom:-1px;white-space:nowrap}
+.tab[aria-selected="true"]{color:var(--ink);border-color:var(--ink)}
 .panel[hidden]{display:none}
-.row{display:grid;grid-template-columns:1fr auto auto;gap:18px;padding:16px 24px;border-bottom:1px solid var(--line);align-items:center}
-.row:last-child{border:0}
-.row .dur{color:var(--muted);font-size:.9rem;white-space:nowrap}
-.row .price{font-weight:600;white-space:nowrap;min-width:80px;text-align:right}
-.price-note{font-size:.9rem;color:var(--muted);margin-top:16px}
-@media (max-width:560px){.row{grid-template-columns:1fr auto;padding:14px 18px}.row .dur{grid-column:1;grid-row:2;margin-top:-10px}}
+.row{display:grid;grid-template-columns:1fr auto auto;gap:24px;align-items:baseline;padding:22px 0;border-bottom:1px solid var(--line)}
+.row .name{font:400 1.3rem "Cormorant Garamond",serif}
+.row .dur{font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.row .price{font-weight:400;min-width:90px;text-align:right}
+.note{color:var(--muted);font-size:.92rem;margin-top:24px}
+@media (max-width:600px){.row{grid-template-columns:1fr auto}.row .dur{grid-column:1;grid-row:2;margin-top:-14px}}
 
 /* team */
-.team{display:grid;grid-template-columns:1fr 1fr;gap:28px}
-.person{display:grid;grid-template-columns:150px 1fr;gap:22px;align-items:center;background:var(--bg);border:1px solid var(--line);border-radius:var(--radius);padding:22px}
-.person img{border-radius:14px;aspect-ratio:4/5;object-fit:cover;width:150px}
-.person .titles{color:var(--muted);font-size:.92rem;margin-bottom:.8em}
-.person a{font-size:.92rem;display:block;text-decoration:none;color:var(--pink)}
-@media (max-width:820px){.team{grid-template-columns:1fr}}
-@media (max-width:420px){.person{grid-template-columns:1fr}.person img{width:100%;max-width:220px}}
+.team{background:var(--paper)}
+.people{display:grid;grid-template-columns:1fr 1fr;gap:60px;margin-top:60px}
+.person{display:grid;grid-template-columns:200px 1fr;gap:32px;align-items:center}
+.person img{width:100%;aspect-ratio:4/5;object-fit:cover;filter:saturate(.9)}
+.person h3{margin:0 0 6px}
+.person .titles{font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-bottom:16px}
+.person .links a{display:block;text-decoration:none;color:var(--muted);font-size:.97rem}
+.person .links a:hover{color:var(--ink)}
+@media (max-width:900px){.people{grid-template-columns:1fr;gap:48px}}
+@media (max-width:480px){.person{grid-template-columns:1fr}.person img{max-width:260px}}
 
 /* contact */
-.contact{display:grid;grid-template-columns:1fr 1fr;gap:28px}
-.box{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:30px}
-.hours{width:100%;border-collapse:collapse;font-size:.97rem}
-.hours td{padding:8px 0;border-bottom:1px solid var(--line)}
-.hours td:last-child{text-align:right;color:var(--muted)}
-.hours tr:last-child td{border:0}
-.contact dl{margin:0}
-.contact dt{font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-top:16px}
-.contact dd{margin:2px 0 0;font-size:1.05rem}
-.contact dd a{text-decoration:none}
-@media (max-width:820px){.contact{grid-template-columns:1fr}}
+.contact{background:var(--plum);color:var(--ivory)}
+.c-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:90px}
+.contact .big a{font:400 clamp(1.7rem,3.2vw,2.5rem)/1.3 "Cormorant Garamond",serif;text-decoration:none;display:block;border-bottom:1px solid var(--line-light);padding:18px 0;transition:color .3s}
+.contact .big a:hover{color:var(--rose)}
+.contact .label{font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);margin-top:28px}
+.hours{width:100%;border-collapse:collapse;margin-top:12px}
+.hours td{padding:13px 0;border-bottom:1px solid var(--line-light);color:rgba(248,243,238,.75)}
+.hours td:last-child{text-align:right;color:var(--ivory)}
+.contact .actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:40px}
+@media (max-width:900px){.c-grid{grid-template-columns:1fr;gap:56px}}
 
-footer{border-top:1px solid var(--line);padding:36px 0;font-size:.88rem;color:var(--muted)}
-footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:center}
-footer img{height:34px}
-footer nav{display:flex;gap:18px}
+footer{background:var(--plum-2);color:rgba(248,243,238,.55);font-size:.82rem;letter-spacing:.06em;padding:44px 0}
+footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+footer img{height:34px;filter:brightness(0) invert(1);opacity:.85}
+footer nav{display:flex;gap:26px}
 footer a{text-decoration:none}
+footer a:hover{color:var(--ivory)}
 </style>
 </head>
 <body>
 
-<div class="notice">
-  <strong>Ny kund?</strong> Caroline har just nu väntelista. Skicka ett SMS till
-  <a href="sms:+46707556869">0707-55 68 69</a> eller mejla
-  <a href="mailto:caroline@halsostodet.nu">caroline@halsostodet.nu</a>.
-</div>
+<div class="notice"><strong>Ny kund?</strong> Vi har just nu väntelista. SMS:a <a href="sms:+46707556869">0707-55 68 69</a> eller mejla <a href="mailto:caroline@halsostodet.nu">caroline@halsostodet.nu</a> så återkommer vi.</div>
 
-<header>
+<header id="hdr">
   <div class="wrap nav">
-    <a href="#top" aria-label="HälsoStödet, till startsidan"><img src="assets/logo.png" alt="HälsoStödet"></a>
+    <a class="logo" href="#top" aria-label="HälsoStödet"><img src="assets/logo.png" alt="HälsoStödet"></a>
     <ul>
+      <li><a href="#metoden">Metoden</a></li>
       <li><a href="#behandlingar">Behandlingar</a></li>
+      <li><a href="#kurser">Kurser &amp; böcker</a></li>
       <li><a href="#priser">Priser</a></li>
-      <li><a href="#om-oss">Om oss</a></li>
       <li><a href="#kontakt">Kontakt</a></li>
     </ul>
-    <a class="btn btn-primary" href="https://www.bokadirekt.se/places/halsostodet-ab-caroline-5514" target="_blank" rel="noopener">Boka tid</a>
+    <a class="btn btn-line" href="https://www.bokadirekt.se/places/halsostodet-ab-caroline-5514" target="_blank" rel="noopener">Boka tid</a>
   </div>
 </header>
 
 <main id="top">
 
-<section class="hero">
-  <div class="wrap hero-grid">
-    <div>
-      <div class="eyebrow">Skolgatan 31 · Uppsala</div>
-      <h1>Balansera ditt liv. För en starkare kropp och ett friskare sinne.</h1>
-      <p class="lead">Djupgående massage, Reset-behandling, coaching, samtalsterapi och kostrådgivning. Vi ser till hela människan, inte bara till symptomen.</p>
-      <div class="actions">
-        <a class="btn btn-primary" href="https://www.bokadirekt.se/places/halsostodet-ab-caroline-5514" target="_blank" rel="noopener">Boka tid på Bokadirekt</a>
-        <a class="btn btn-ghost" href="#kontakt">Kontakta oss</a>
-      </div>
-      <div class="rating"><span class="stars" aria-hidden="true">★★★★★</span> 4,9 av 5 · 186 betyg på Bokadirekt</div>
+<section class="hero" style="padding:0">
+  <div class="hero-text">
+    <div class="kicker">HälsoStödet · Uppsala</div>
+    <h1>Balans för kropp, <em>nervsystem</em> och sinne.</h1>
+    <p>Djupgående massage, Reset-behandling, coaching, samtalsterapi och kostrådgivning. Vi behandlar inte bara symptomen, vi stödjer hela människan.</p>
+    <div class="actions">
+      <a class="btn btn-solid" href="https://www.bokadirekt.se/places/halsostodet-ab-caroline-5514" target="_blank" rel="noopener">Boka tid <span class="arrow">→</span></a>
+      <a class="btn btn-line" href="#behandlingar">Våra behandlingar</a>
     </div>
-    <div class="hero-photo">
-      <img class="portrait" src="assets/caroline.jpg" alt="Caroline Monthan, grundare av HälsoStödet">
-      <div class="badge"><strong>20+ år</strong>av erfarenhet i Uppsala</div>
+    <div class="hero-meta">
+      <div><strong>20+ år</strong>i Uppsala</div>
+      <div><strong>4,9 / 5</strong>186 betyg på Bokadirekt</div>
+      <div><strong>Skolgatan 31</strong>753 11 Uppsala</div>
+    </div>
+  </div>
+  <div class="hero-img"><img src="assets/meditation.jpg" alt="Kvinna som mediterar i ett lugnt rum"></div>
+</section>
+
+<div class="ribbon" aria-hidden="true">
+  <div class="ribbon-track">
+    <span>Reset-behandling</span><span>Djupgående massage</span><span>Coaching</span><span>Samtalsterapi</span><span>Kost &amp; näring</span><span>Stresshantering</span><span>Rehabträning</span>
+    <span>Reset-behandling</span><span>Djupgående massage</span><span>Coaching</span><span>Samtalsterapi</span><span>Kost &amp; näring</span><span>Stresshantering</span><span>Rehabträning</span>
+  </div>
+</div>
+
+<section id="metoden">
+  <div class="wrap philosophy">
+    <div class="frame reveal"><img src="assets/caroline.jpg" alt="Caroline Monthan, grundare av HälsoStödet"></div>
+    <div class="reveal">
+      <div class="kicker">Human Systemic Reset™</div>
+      <h2>Kroppen är ett <em>helt system</em></h2>
+      <p class="lead">Kropp, nervsystem, emotionella mönster och belastning hänger ihop. Därför arbetar vi med hela människan, inte med ett symptom i taget.</p>
+      <p>Många besvär uppstår inte isolerat. De byggs ofta upp av långvarig stress och kompensation, av ett system som försökt skydda oss under lång tid.</p>
+      <p>Med Human Systemic Reset™ som grund kombinerar vi kroppsbehandling, träning, coaching och kost till en helhet som är anpassad efter dig.</p>
     </div>
   </div>
 </section>
 
-<section class="alt" id="metoden">
-  <div class="wrap method">
-    <img class="flower" src="assets/magnolia.png" alt="">
-    <div>
-      <div class="eyebrow">Vårt arbetssätt</div>
-      <h2>Human Systemic Reset™</h2>
-      <p>Vi arbetar utifrån ett helhetsperspektiv där kropp, nervsystem, emotionella mönster och belastning ses som delar av samma system.</p>
-      <p>Många symptom uppstår inte isolerat. De hänger ofta ihop genom långvarig stress och kompensation. Därför arbetar vi inte bara med symptomen, utan med att förstå och stödja hela människans system.</p>
-      <blockquote>Vi inspirerar och hjälper dig till ett friskare liv.</blockquote>
-    </div>
-  </div>
-</section>
-
-<section id="behandlingar">
+<section class="treat" id="behandlingar">
   <div class="wrap">
-    <div class="section-head">
-      <div class="eyebrow">Behandlingar</div>
-      <h2>Stöd för både kropp och sinne</h2>
-      <p>Varje behandling anpassas efter dig. I alla kroppsbehandlingar ingår råd om övningar, så att besvären inte kommer tillbaka.</p>
+    <div class="treat-head reveal">
+      <div><div class="kicker">Behandlingar</div><h2>Det vi gör</h2></div>
+      <p>Varje behandling anpassas efter dig. I alla kroppsbehandlingar ingår övningar som hjälper dig att förebygga att besvären kommer tillbaka.</p>
     </div>
-    <div class="cards">
-      <article class="card">
-        <h3>Djupgående massage &amp; Reset-behandling</h3>
-        <p>Vår egenutvecklade metod Resetbycm™ behandlar långsamt och på djupet de obalanser som ligger bakom besvären. Behandlingen görs ovanpå kläderna och hjälper kroppen tillbaka till en naturlig hållning, rörlighet och cirkulation.</p>
-        <div class="from"><span>Från</span> 720 kr · 30–90 min</div>
-      </article>
-      <article class="card">
-        <h3>Coaching &amp; samtalsterapi</h3>
-        <p>Målfokuserade samtal med konkreta mentala verktyg för att förstå dina mönster, komma förbi hinder och nå dina mål. På plats eller via video och telefon.</p>
-        <div class="from"><span>Från</span> 835 kr · 45–120 min</div>
-      </article>
-      <article class="card">
-        <h3>Kostrådgivning</h3>
-        <p>Kostråd anpassade efter dina behov och mål. Inför första besöket för du matdagbok i ungefär en vecka, så att vi kan planera utifrån din vardag.</p>
-        <div class="from"><span>Från</span> 720 kr · 30–60 min</div>
-      </article>
-      <article class="card">
-        <h3>Hälsokonsultation &amp; rehabträning</h3>
-        <p>Vi går igenom vikt, energi, sömn, kost och träning, och tar fram individuellt anpassad träning som återställer och stärker kroppens funktion.</p>
-        <div class="from"><span>Från</span> 720 kr · 30–60 min</div>
-      </article>
+
+    <details class="t-item reveal" open>
+      <summary><span class="t-num">01</span><h3>Djupgående massage &amp; Reset-behandling</h3><span class="t-price">Från 720 kr</span><span class="t-plus" aria-hidden="true"></span></summary>
+      <div class="t-body"><div>
+        <p>I vår egenutvecklade metod Resetbycm™ behandlar vi långsamt och mycket djupt de obalanser som ligger bakom besvären. Behandlingen görs ovanpå kläderna och återställer kroppens naturliga hållning, rörelsemönster och cirkulation.</p>
+        <p>Tekniken är utvecklad av Caroline utifrån egen erfarenhet av långvarig värk, och lärs ut till kollegorna på HälsoStödet. Har du långvariga problem med värk och smärta rekommenderar vi helhjärtat att du provar Reset-behandlingen.</p>
+      </div></div>
+    </details>
+
+    <details class="t-item reveal">
+      <summary><span class="t-num">02</span><h3>Coaching &amp; samtalsterapi</h3><span class="t-price">Från 835 kr</span><span class="t-plus" aria-hidden="true"></span></summary>
+      <div class="t-body"><div>
+        <p>Ofta ligger mentala orsaker bakom de fysiska besvär man först söker hjälp för. Ibland är det klokt att enbart sätta av tid för det mentala.</p>
+        <p>Vi har erfarenhet av bland annat stress, utmattning, oro, smärthantering och viktproblematik. Samtalen sker på plats, via video, telefon eller i skrift.</p>
+      </div></div>
+    </details>
+
+    <details class="t-item reveal">
+      <summary><span class="t-num">03</span><h3>Kost- &amp; näringsrådgivning</h3><span class="t-price">Från 720 kr</span><span class="t-plus" aria-hidden="true"></span></summary>
+      <div class="t-body"><div>
+        <p>Vi hjälper dig att sålla bland snabbkurer, dieter och trender, och bygger tillsammans en grund för vad, när och hur du äter, som du kan använda resten av livet.</p>
+        <p>Inför första besöket för du matdagbok i ungefär en vecka. Rådgivningen sker på plats, via video eller telefon, med extra stöd via SMS och mejl.</p>
+      </div></div>
+    </details>
+
+    <details class="t-item reveal">
+      <summary><span class="t-num">04</span><h3>Stresshantering &amp; avslappning</h3><span class="t-price">Ingår i coaching</span><span class="t-plus" aria-hidden="true"></span></summary>
+      <div class="t-body"><div>
+        <p>I dagens snabba flöde är det lätt att dras med i farten. Det kan visa sig som retlighet, sömnbesvär, värk eller ett påslag som inte vill lägga sig.</p>
+        <p>Stresshantering och avslappningstekniker ingår ofta i våra konsultationer. Vill du fokusera enbart på detta bokar du en egen tid för det.</p>
+      </div></div>
+    </details>
+
+    <details class="t-item reveal">
+      <summary><span class="t-num">05</span><h3>Rehabträning</h3><span class="t-price">Ingår i behandlingarna</span><span class="t-plus" aria-hidden="true"></span></summary>
+      <div class="t-body"><div>
+        <p>Individuellt anpassad träning för att återställa och stärka kroppens funktion, efter en skada eller operation, eller för att förebygga att problem uppstår.</p>
+        <p>Övningarna anpassas till just dina besvär och till en nivå som känns möjlig för dig, och ingår i alla våra behandlingar utan extra kostnad.</p>
+      </div></div>
+    </details>
+  </div>
+</section>
+
+<section class="journey">
+  <div class="wrap">
+    <div class="reveal"><div class="kicker">Din första tid</div><h2>Så börjar du din <em>Reset-behandling</em></h2></div>
+    <div class="steps">
+      <div class="step reveal"><div class="n">i.</div><h3>Väntelistan</h3><p>SMS:a eller mejla Caroline. Vi ställer dig på väntelistan och hör av oss med en länk till bokningskalendern.</p></div>
+      <div class="step reveal"><div class="n">ii.</div><h3>Två första tiderna</h3><p>Boka två behandlingar på 45 eller 60 minuter, med ungefär två veckors mellanrum.</p></div>
+      <div class="step reveal"><div class="n">iii.</div><h3>Vi planerar tillsammans</h3><p>Den tredje tiden bokar vi ihop, utifrån hur din kropp svarar. Ofta tre till fem veckor senare.</p></div>
+    </div>
+    <div class="special">
+      <div class="reveal"><h3>Är du gravid?</h3><p>Stort grattis! Du behöver ingen särskild behandling, vi anpassar den efter dig. Meddela oss gärna innan, så sätter vi av lite extra tid utan merkostnad.</p></div>
+      <div class="reveal"><h3>Fibromyalgi eller kronisk värk?</h3><p>Resetbycm-tekniken löser upp mycket spänningar och är framtagen för att minimera risken för ökade inflammationer.</p></div>
     </div>
   </div>
 </section>
 
-<section class="alt">
-  <div class="wrap">
-    <div class="recognise">
-      <div>
-        <div class="eyebrow">Känner du igen dig?</div>
-        <h2>Att fastna i samma mönster</h2>
-        <p>Testa vår kostnadsfria startövning i hur du identifierar och förändrar dina mönster.</p>
-        <a class="btn btn-primary" href="https://halsostodet.aweb.page/p/43b31ea9-4b48-4ac5-99c2-e9b6fc226d4b" target="_blank" rel="noopener">Gör startövningen gratis</a>
-      </div>
-      <ul>
-        <li>Du fastnar i samma reaktioner, gång på gång.</li>
-        <li>Du förstår dina mönster men reagerar ändå automatiskt.</li>
-        <li>Du bär stress eller spänningar som inte riktigt släpper.</li>
-      </ul>
+<section>
+  <div class="wrap recognise">
+    <div class="reveal">
+      <div class="kicker">Känner du igen dig?</div>
+      <h2>När du <em>vet bättre</em>, men ändå fastnar</h2>
+      <p style="color:var(--muted)">Ofta handlar det inte om brist på vilja. Systemet försöker skydda något. Börja med vår kostnadsfria startövning.</p>
+      <a class="btn btn-dark" href="https://resetbycm.com/startovning" target="_blank" rel="noopener">Gratis startövning <span class="arrow">→</span></a>
     </div>
+    <ol class="reveal">
+      <li>Du fastnar i samma reaktioner, gång på gång.</li>
+      <li>Du förstår dina mönster men reagerar ändå automatiskt.</li>
+      <li>Du bär stress eller spänningar som inte riktigt släpper.</li>
+    </ol>
+  </div>
+</section>
+
+<section class="library" id="kurser">
+  <div class="wrap lib-grid">
+    <div class="reveal">
+      <div class="kicker">Kurser &amp; böcker</div>
+      <h2>Arbeta i <em>din</em> takt</h2>
+      <p style="color:var(--muted)">Vi har skapat flera sätt att börja arbetet, i den nivå och form som passar dig bäst.</p>
+      <div class="formats">
+        <div><strong>Startövningar</strong><span>Kostnadsfria, för ett första litet skifte.</span></div>
+        <div><strong>Böcker &amp; guider</strong><span>Praktiska verktyg för arbete hemma.</span></div>
+        <div><strong>Onlinekurser</strong><span>Steg för steg med nervsystem och mönster.</span></div>
+        <div><strong>Grupprocesser</strong><span>Stöd och struktur tillsammans med andra.</span></div>
+      </div>
+      <p><strong style="font-weight:500">Let Go &amp; Move On</strong> av Caroline Monthan finns att köpa på Amazon. En kortare svensk version, <em>Släpp &amp; Gå Vidare</em>, är på väg.</p>
+      <a class="btn btn-dark" href="https://www.amazon.com/dp/B0F1Z2PWSW" target="_blank" rel="noopener">Boken på Amazon <span class="arrow">→</span></a>
+    </div>
+    <div class="book reveal"><img src="assets/book.png" alt="Boken Let Go &amp; Move On av Caroline Monthan"></div>
   </div>
 </section>
 
 <section id="priser">
   <div class="wrap">
-    <div class="section-head">
-      <div class="eyebrow">Prislista</div>
-      <h2>Priser</h2>
-    </div>
+    <div class="reveal"><div class="kicker">Prislista</div><h2>Priser</h2></div>
     <div class="tabs" role="tablist">
-      <button class="tab" role="tab" aria-selected="true" aria-controls="p-massage" id="t-massage">Massage</button>
-      <button class="tab" role="tab" aria-selected="false" aria-controls="p-coaching" id="t-coaching">Coaching &amp; samtal</button>
-      <button class="tab" role="tab" aria-selected="false" aria-controls="p-kost" id="t-kost">Kost &amp; hälsa</button>
+      <button class="tab" role="tab" aria-selected="true" aria-controls="p1" id="tb1">Massage</button>
+      <button class="tab" role="tab" aria-selected="false" aria-controls="p2" id="tb2">Coaching &amp; samtal</button>
+      <button class="tab" role="tab" aria-selected="false" aria-controls="p3" id="tb3">Kost &amp; hälsa</button>
     </div>
-
-    <div class="panel" role="tabpanel" id="p-massage" aria-labelledby="t-massage">
-      <div class="row"><div>Djupbehandlande massage, Reset-behandling</div><div class="dur">30 min</div><div class="price">720 kr</div></div>
-      <div class="row"><div>Djupbehandlande massage, Reset-behandling</div><div class="dur">45 min</div><div class="price">860 kr</div></div>
-      <div class="row"><div>Djupbehandlande massage, Reset-behandling</div><div class="dur">60 min</div><div class="price">1 020 kr</div></div>
-      <div class="row"><div>Djupbehandlande massage, Reset-behandling</div><div class="dur">90 min</div><div class="price">1 720 kr</div></div>
+    <div class="panel" role="tabpanel" id="p1" aria-labelledby="tb1">
+      <div class="row"><span class="name">Reset-behandling, djupbehandlande massage</span><span class="dur">30 min</span><span class="price">720 kr</span></div>
+      <div class="row"><span class="name">Reset-behandling, djupbehandlande massage</span><span class="dur">45 min</span><span class="price">860 kr</span></div>
+      <div class="row"><span class="name">Reset-behandling, djupbehandlande massage</span><span class="dur">60 min</span><span class="price">1 020 kr</span></div>
+      <div class="row"><span class="name">Reset-behandling, djupbehandlande massage</span><span class="dur">90 min</span><span class="price">1 720 kr</span></div>
     </div>
-
-    <div class="panel" role="tabpanel" id="p-coaching" aria-labelledby="t-coaching" hidden>
-      <div class="row"><div>Coaching via video/telefon</div><div class="dur">45 min</div><div class="price">835 kr</div></div>
-      <div class="row"><div>Coaching via video/telefon</div><div class="dur">60 min</div><div class="price">990 kr</div></div>
-      <div class="row"><div>Coaching</div><div class="dur">60 min</div><div class="price">990 kr</div></div>
-      <div class="row"><div>Coaching</div><div class="dur">90 min</div><div class="price">1 720 kr</div></div>
-      <div class="row"><div>Coaching</div><div class="dur">120 min</div><div class="price">1 980 kr</div></div>
-      <div class="row"><div>Samtalsterapi</div><div class="dur">60 min</div><div class="price">990 kr</div></div>
-      <div class="row"><div>Samtalsterapi</div><div class="dur">90 min</div><div class="price">1 690 kr</div></div>
+    <div class="panel" role="tabpanel" id="p2" aria-labelledby="tb2" hidden>
+      <div class="row"><span class="name">Coaching via video eller telefon</span><span class="dur">45 min</span><span class="price">835 kr</span></div>
+      <div class="row"><span class="name">Coaching via video eller telefon</span><span class="dur">60 min</span><span class="price">990 kr</span></div>
+      <div class="row"><span class="name">Coaching</span><span class="dur">60 min</span><span class="price">990 kr</span></div>
+      <div class="row"><span class="name">Coaching</span><span class="dur">90 min</span><span class="price">1 720 kr</span></div>
+      <div class="row"><span class="name">Coaching</span><span class="dur">120 min</span><span class="price">1 980 kr</span></div>
+      <div class="row"><span class="name">Samtalsterapi</span><span class="dur">60 min</span><span class="price">990 kr</span></div>
+      <div class="row"><span class="name">Samtalsterapi</span><span class="dur">90 min</span><span class="price">1 690 kr</span></div>
     </div>
-
-    <div class="panel" role="tabpanel" id="p-kost" aria-labelledby="t-kost" hidden>
-      <div class="row"><div>Hälsokonsultation</div><div class="dur">30 min</div><div class="price">720 kr</div></div>
-      <div class="row"><div>Hälsokonsultation</div><div class="dur">60 min</div><div class="price">1 020 kr</div></div>
-      <div class="row"><div>Telefonrådgivning</div><div class="dur">30 min</div><div class="price">700 kr</div></div>
-      <div class="row"><div>Kostrådgivning, första besöket (60 min + 30 min planering)</div><div class="dur">60 min</div><div class="price">1 720 kr</div></div>
-      <div class="row"><div>Kostrådgivning, uppföljning</div><div class="dur">30 min</div><div class="price">720 kr</div></div>
-      <div class="row"><div>Kostrådgivning, uppföljning</div><div class="dur">60 min</div><div class="price">1 020 kr</div></div>
-      <div class="row"><div>Kostrådgivning via telefon</div><div class="dur">30 min</div><div class="price">720 kr</div></div>
-      <div class="row"><div>Kostrådgivning via telefon</div><div class="dur">60 min</div><div class="price">1 020 kr</div></div>
+    <div class="panel" role="tabpanel" id="p3" aria-labelledby="tb3" hidden>
+      <div class="row"><span class="name">Hälsokonsultation</span><span class="dur">30 min</span><span class="price">720 kr</span></div>
+      <div class="row"><span class="name">Hälsokonsultation</span><span class="dur">60 min</span><span class="price">1 020 kr</span></div>
+      <div class="row"><span class="name">Telefonrådgivning</span><span class="dur">30 min</span><span class="price">700 kr</span></div>
+      <div class="row"><span class="name">Kostrådgivning, första besöket (+ 30 min planering)</span><span class="dur">60 min</span><span class="price">1 720 kr</span></div>
+      <div class="row"><span class="name">Kostrådgivning, uppföljning</span><span class="dur">30 min</span><span class="price">720 kr</span></div>
+      <div class="row"><span class="name">Kostrådgivning, uppföljning</span><span class="dur">60 min</span><span class="price">1 020 kr</span></div>
+      <div class="row"><span class="name">Kostrådgivning via telefon</span><span class="dur">30 min</span><span class="price">720 kr</span></div>
+      <div class="row"><span class="name">Kostrådgivning via telefon</span><span class="dur">60 min</span><span class="price">1 020 kr</span></div>
     </div>
-    <p class="price-note">Är du gravid? Vi anpassar självklart behandlingen efter dig. Boka tid på Bokadirekt eller kontakta oss.</p>
+    <p class="note">Rehabträning och övningar ingår i alla kroppsbehandlingar utan extra kostnad.</p>
   </div>
 </section>
 
-<section class="alt" id="om-oss">
+<section class="team" id="team">
   <div class="wrap">
-    <div class="section-head">
-      <div class="eyebrow">Om oss</div>
-      <h2>Vi som arbetar här</h2>
-      <p>HälsoStödet har hjälpt människor i Uppsala att hitta balans i över 20 år. Vi har gedigen utbildning, lång erfarenhet och en helhetssyn på hälsa.</p>
-    </div>
-    <div class="team">
-      <div class="person">
+    <div class="reveal"><div class="kicker">Vårt team</div><h2>Gedigen utbildning, <em>lång erfarenhet</em></h2></div>
+    <div class="people">
+      <div class="person reveal">
         <img src="assets/caroline.jpg" alt="Caroline Monthan">
-        <div>
-          <h3>Caroline Monthan</h3>
-          <div class="titles">Dipl. friskvårdskonsult · Cert. resetterapeut · Dipl. samtalsterapeut</div>
-          <a href="sms:+46707556869">0707-55 68 69</a>
-          <a href="mailto:caroline@halsostodet.nu">caroline@halsostodet.nu</a>
-        </div>
+        <h3>Caroline Monthan</h3>
+        <div class="titles">Dipl. friskvårdskonsult · Cert. resetterapeut · Dipl. samtalsterapeut</div>
+        <div class="links"><a href="sms:+46707556869">0707-55 68 69</a><a href="mailto:caroline@halsostodet.nu">caroline@halsostodet.nu</a></div>
       </div>
-      <div class="person">
+      <div class="person reveal">
         <img src="assets/anki.jpg" alt="Anki Borg">
-        <div>
-          <h3>Anki Borg</h3>
-          <div class="titles">Dipl. hälsopedagog · Massageterapeut</div>
-          <a href="tel:+46737859776">073-785 97 76</a>
-          <a href="mailto:info@halsostodet.nu">info@halsostodet.nu</a>
-        </div>
+        <h3>Anki Borg</h3>
+        <div class="titles">Dipl. hälsopedagog · Massageterapeut</div>
+        <div class="links"><a href="tel:+46737859776">073-785 97 76</a><a href="mailto:info@halsostodet.nu">info@halsostodet.nu</a></div>
       </div>
     </div>
   </div>
 </section>
 
-<section id="kontakt">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="eyebrow">Kontakt</div>
-      <h2>Välkommen till Skolgatan 31</h2>
-      <p>Det snabbaste sättet att nå oss är via SMS eller mejl.</p>
+<section class="contact" id="kontakt">
+  <div class="wrap c-grid">
+    <div class="reveal">
+      <div class="kicker">Kontakt</div>
+      <h2>Välkommen till <em>Skolgatan&nbsp;31</em></h2>
+      <p style="color:rgba(248,243,238,.7)">Det snabbaste sättet att nå oss är via SMS eller mejl.</p>
+      <div class="big">
+        <a href="sms:+46707556869">0707-55 68 69</a>
+        <a href="mailto:caroline@halsostodet.nu">caroline@halsostodet.nu</a>
+        <a href="https://maps.google.com/?q=Skolgatan+31,+753+11+Uppsala" target="_blank" rel="noopener">Skolgatan 31, Uppsala</a>
+      </div>
+      <div class="actions">
+        <a class="btn btn-solid" href="https://www.bokadirekt.se/places/halsostodet-ab-caroline-5514" target="_blank" rel="noopener">Boka tid <span class="arrow">→</span></a>
+        <a class="btn btn-line" href="https://www.instagram.com/halsostodet/" target="_blank" rel="noopener">Instagram</a>
+        <a class="btn btn-line" href="https://www.facebook.com/halsostodet/?locale=sv_SE" target="_blank" rel="noopener">Facebook</a>
+      </div>
     </div>
-    <div class="contact">
-      <div class="box">
-        <dl>
-          <dt>Adress</dt>
-          <dd><a href="https://maps.google.com/?q=Skolgatan+31,+753+11+Uppsala" target="_blank" rel="noopener">Skolgatan 31, 753 11 Uppsala</a></dd>
-          <dt>SMS / telefon</dt>
-          <dd><a href="sms:+46707556869">0707-55 68 69</a></dd>
-          <dt>E-post</dt>
-          <dd><a href="mailto:caroline@halsostodet.nu">caroline@halsostodet.nu</a></dd>
-          <dt>Följ oss</dt>
-          <dd><a href="https://www.instagram.com/halsostodet/" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.facebook.com/halsostodet/?locale=sv_SE" target="_blank" rel="noopener">Facebook</a></dd>
-        </dl>
-        <p style="margin-top:24px"><a class="btn btn-primary" href="https://www.bokadirekt.se/places/halsostodet-ab-caroline-5514" target="_blank" rel="noopener">Boka tid</a></p>
-      </div>
-      <div class="box">
-        <h3>Öppettider</h3>
-        <table class="hours">
-          <tr><td>Måndag</td><td>09–15</td></tr>
-          <tr><td>Tisdag</td><td>09–15</td></tr>
-          <tr><td>Onsdag</td><td>09–15</td></tr>
-          <tr><td>Torsdag</td><td>09–14</td></tr>
-          <tr><td>Fredag</td><td>09–14</td></tr>
-          <tr><td>Lördag–söndag</td><td>Stängt</td></tr>
-        </table>
-      </div>
+    <div class="reveal">
+      <div class="label">Öppettider</div>
+      <table class="hours">
+        <tr><td>Måndag</td><td>09.00 – 15.00</td></tr>
+        <tr><td>Tisdag</td><td>09.00 – 15.00</td></tr>
+        <tr><td>Onsdag</td><td>09.00 – 15.00</td></tr>
+        <tr><td>Torsdag</td><td>09.00 – 14.00</td></tr>
+        <tr><td>Fredag</td><td>09.00 – 14.00</td></tr>
+        <tr><td>Lördag – söndag</td><td>Stängt</td></tr>
+      </table>
     </div>
   </div>
 </section>
@@ -349,24 +458,24 @@ footer a{text-decoration:none}
 <footer>
   <div class="wrap">
     <img src="assets/logo.png" alt="HälsoStödet">
-    <nav>
-      <a href="https://www.halsostodet.nu/integritetspolicy2/">Integritetspolicy</a>
-      <a href="https://www.halsostodet.nu/villkor-och-foreskrifter2/">Villkor</a>
-    </nav>
+    <nav><a href="https://www.halsostodet.nu/integritetspolicy2/">Integritetspolicy</a><a href="https://www.halsostodet.nu/villkor-och-foreskrifter2/">Villkor</a></nav>
     <div>© <span id="y">2026</span> HälsoStödet AB</div>
   </div>
 </footer>
 
 <script>
-document.querySelectorAll('.tab').forEach(function(tab){
-  tab.addEventListener('click',function(){
-    document.querySelectorAll('.tab').forEach(function(t){t.setAttribute('aria-selected','false')});
+(function(){
+  var hdr=document.getElementById('hdr'),hero=document.querySelector('.hero');
+  addEventListener('scroll',function(){hdr.classList.toggle('solid',scrollY>40)},{passive:true});
+  document.querySelectorAll('.tab').forEach(function(t){t.addEventListener('click',function(){
+    document.querySelectorAll('.tab').forEach(function(x){x.setAttribute('aria-selected','false')});
     document.querySelectorAll('.panel').forEach(function(p){p.hidden=true});
-    tab.setAttribute('aria-selected','true');
-    document.getElementById(tab.getAttribute('aria-controls')).hidden=false;
-  });
-});
-document.getElementById('y').textContent=new Date().getFullYear();
+    t.setAttribute('aria-selected','true');document.getElementById(t.getAttribute('aria-controls')).hidden=false;});});
+  var els=document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});els.forEach(function(e){io.observe(e)})}
+  else els.forEach(function(e){e.classList.add('in')});
+  document.getElementById('y').textContent=new Date().getFullYear();
+})();
 </script>
 </body>
 </html>
