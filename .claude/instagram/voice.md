@@ -32,6 +32,12 @@ STATUS: DRAFT, waiting for Ali's approval.
    with NO ج and NO ق at all (e.g. say «آخر الشهر» instead of «قريباً»,
    «مين عطاكي» instead of «مين جايبلك»). Simple, short, easy words. On-screen
    text and the end card may still use them («قريباً» on screen is fine).
+10. DIALOGUE LANGUAGE (Ali, 12 Nov 2026, overrides the Lebanese/Syrian rule for
+   spoken lines): characters speak simple, light Modern Standard Arabic
+   (فصحى خفيفة), short and easy to pronounce, still with NO ج and NO ق.
+   Subtitles follow the spoken Fusha. Captions for posts stay Lebanese.
+11. DELIVERY: send each idea as ONE complete copyable block, and also as a
+   .txt file Ali can download.
 
 The full brand rules live in `brand.md` next to this file. Read both before
 writing anything. When this file and `brand.md` disagree, `brand.md` wins.
