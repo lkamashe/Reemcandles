@@ -28,6 +28,10 @@ STATUS: DRAFT, waiting for Ali's approval.
    from the video). Object specs with numbers (box 22x15x10, which face shows,
    how it is held). No image or video prompts, edit plans or reviews unless
    Ali asks.
+9. SPOKEN LINES: MiniMax H3 pronounces ج and ق badly. Write spoken dialogue
+   with NO ج and NO ق at all (e.g. say «آخر الشهر» instead of «قريباً»,
+   «مين عطاكي» instead of «مين جايبلك»). Simple, short, easy words. On-screen
+   text and the end card may still use them («قريباً» on screen is fine).
 
 The full brand rules live in `brand.md` next to this file. Read both before
 writing anything. When this file and `brand.md` disagree, `brand.md` wins.
