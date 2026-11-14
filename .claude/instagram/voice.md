@@ -38,6 +38,10 @@ STATUS: DRAFT, waiting for Ali's approval.
    Subtitles follow the spoken Fusha. Captions for posts stay Lebanese.
 11. DELIVERY: send each idea as ONE complete copyable block, and also as a
    .txt file Ali can download.
+12. DAILY PLAN (Ali, 14 Nov 2026): "idea of the day" = a plan with BOTH a post
+   (photo, from the photo-prompt file) and a reel, with posting times (Beirut
+   time) and a week table. Not reels only. Captions included. Posting times are
+   reasoned suggestions until Insights data exists; say so.
 
 The full brand rules live in `brand.md` next to this file. Read both before
 writing anything. When this file and `brand.md` disagree, `brand.md` wins.
