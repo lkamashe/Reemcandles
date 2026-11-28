@@ -42,6 +42,12 @@ STATUS: DRAFT, waiting for Ali's approval.
    (photo, from the photo-prompt file) and a reel, with posting times (Beirut
    time) and a week table. Not reels only. Captions included. Posting times are
    reasoned suggestions until Insights data exists; say so.
+13. REEL LENGTH (Ali, 28 Nov 2026): ONE 15-second clip per reel (no more 2 x 15).
+   The edited reel may add a 2.5 s end card.
+14. REEL DIALOGUE (Ali, 28 Nov 2026, overrides rule 10): Lebanese Arabic,
+   light and simple so the video tool pronounces it right: at most 6 to 7 lines
+   per 15 s, each 2 to 4 short words, everyday words, NO ج and NO ق. Always add a
+   small table of safer replacement words. Focus on the dialogue first.
 
 The full brand rules live in `brand.md` next to this file. Read both before
 writing anything. When this file and `brand.md` disagree, `brand.md` wins.
